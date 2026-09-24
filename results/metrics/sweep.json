@@ -1,0 +1,50 @@
+[
+  {
+    "count_grid": 16,
+    "rtt_grid": 50.0,
+    "cadence": 25.0,
+    "accuracy": 0.1375,
+    "overhead_pct": 283.2930861374091,
+    "added_latency_ms": 13.20504882521645
+  },
+  {
+    "count_grid": 16,
+    "rtt_grid": 100.0,
+    "cadence": 50.0,
+    "accuracy": 0.135,
+    "overhead_pct": 283.2930861374091,
+    "added_latency_ms": 56.33107696374459
+  },
+  {
+    "count_grid": 32,
+    "rtt_grid": 50.0,
+    "cadence": 25.0,
+    "accuracy": 0.07749999999999999,
+    "overhead_pct": 329.93325169214097,
+    "added_latency_ms": 13.20504882521645
+  },
+  {
+    "count_grid": 32,
+    "rtt_grid": 100.0,
+    "cadence": 50.0,
+    "accuracy": 0.095,
+    "overhead_pct": 329.93325169214097,
+    "added_latency_ms": 56.33107696374459
+  },
+  {
+    "count_grid": 48,
+    "rtt_grid": 50.0,
+    "cadence": 25.0,
+    "accuracy": 0.06999999999999998,
+    "overhead_pct": 544.8998775382114,
+    "added_latency_ms": 13.20504882521645
+  },
+  {
+    "count_grid": 48,
+    "rtt_grid": 100.0,
+    "cadence": 50.0,
+    "accuracy": 0.0725,
+    "overhead_pct": 544.8998775382114,
+    "added_latency_ms": 56.33107696374459
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "policy": "rfc8467",
+  "model": "RandomForest",
+  "random_guess_pct": 5.0,
+  "groups": {
+    "count only": {
+      "n_features": 1,
+      "accuracy": 0.25
+    },
+    "volume only": {
+      "n_features": 14,
+      "accuracy": 0.25
+    },
+    "length shape": {
+      "n_features": 85,
+      "accuracy": 0.25
+    },
+    "timing only": {
+      "n_features": 18,
+      "accuracy": 0.1975
+    },
+    "all channels": {
+      "n_features": 118,
+      "accuracy": 0.2725
+    }
+  }
+}

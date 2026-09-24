@@ -1,0 +1,45 @@
+{
+  "n_traces": 400,
+  "n_sites": 20,
+  "n_queries": 10236,
+  "visits_per_site_min": 20,
+  "visits_per_site_max": 20,
+  "events_per_trace_mean": 25.59,
+  "query_wire_bytes": {
+    "min": 24,
+    "max": 64,
+    "mean": 35.5
+  },
+  "response_wire_bytes": {
+    "min": 42,
+    "max": 395,
+    "mean": 110.1
+  },
+  "rtt_ms": {
+    "min": 51.36,
+    "max": 3609.73,
+    "mean": 245.14
+  },
+  "sites": [
+    "arxiv.org",
+    "edition.cnn.com",
+    "github.com",
+    "news.ycombinator.com",
+    "weather.com",
+    "www.aljazeera.com",
+    "www.apache.org",
+    "www.bbc.com",
+    "www.debian.org",
+    "www.gutenberg.org",
+    "www.harvard.edu",
+    "www.ibm.com",
+    "www.ietf.org",
+    "www.kernel.org",
+    "www.mit.edu",
+    "www.mozilla.org",
+    "www.nasa.gov",
+    "www.nature.com",
+    "www.theguardian.com",
+    "www.un.org"
+  ]
+}

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node (only needed to regenerate the deck)
+node_modules/
+package-lock.json
+package.json
+
+# Local editor / tool state
+.claude/settings.local.json
+_slides/
+*.tmp
+
+# Presentation is kept out of the repo - a separate deck will be made for GitHub
+presentation/
