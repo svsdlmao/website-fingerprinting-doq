@@ -31,7 +31,7 @@ def evaluate_cell(X, y, model_name: str, n_classes: int) -> dict:
     top3 = []
 
     for tr_idx, te_idx in skf.split(X, y):
-        clf = models.build(model_name)
+        clf = models.build(model_name, n_classes)
         clf.fit(X[tr_idx], y[tr_idx])
         pred = clf.predict(X[te_idx])
         y_true_all.append(y[te_idx])

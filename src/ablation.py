@@ -69,7 +69,7 @@ def run(policy: str = "rfc8467", model_name: str = "RandomForest", verbose: bool
         idx = [i for i, n in enumerate(names) if keep(n)]
         if not idx:
             continue
-        acc = float(cross_val_score(models.build(model_name), X[:, idx], y, cv=skf).mean())
+        acc = float(cross_val_score(models.build(model_name, len(sites)), X[:, idx], y, cv=skf).mean())
         out["groups"][label] = {"n_features": len(idx), "accuracy": acc}
         if verbose:
             print(f"{label:<16}{len(idx):>10}{acc * 100:>10.1f}%")

@@ -19,27 +19,36 @@ resolver — no synthetic traces.
 
 ## Headline result
 
+100-site closed world (Review 2):
+
 | Defence | Best attacker | Bandwidth | Added latency |
 |---|---|---|---|
 | No padding | **100.0 %** | 0 % | 0 ms |
-| RFC 8467 block padding | 26.8 % | 215 % | 0 ms |
-| RFC 8467 + count normalisation | 22.5 % | 330 % | 0 ms |
-| **Adaptive (proposed)** | **7.8 %** | 330 % | +13 ms |
-| Maximal padding (512/1024) | 27.8 % | 663 % | 0 ms |
+| RFC 8467 block padding | 15.1 % | 227 % | 0 ms |
+| RFC 8467 + count normalisation | 10.3 % | 327 % | 0 ms |
+| **Adaptive (proposed)** | **5.5 %** | 327 % | +21 ms |
+| Maximal padding (512/1024) | 14.9 % | 692 % | 0 ms |
 
-Random guessing over 20 sites is 5 %. Dataset: 400 page-load traces,
-10,240 live DoQ queries, 118 features per trace, 5-fold stratified CV.
+Random guessing over 100 sites is 1 %. Dataset: 1,500 page-load traces,
+39,110 live DoQ queries, 118 features per trace, 5-fold stratified CV.
 
-Three findings worth stating plainly:
+The earlier 20-site run (Review 1) is kept alongside for comparison:
+`data/raw/doq_traces_20sites.jsonl`, `results/metrics/results_20sites.json`.
 
-1. **Undefended DoQ leaks completely.** A page load's traffic profile is
-   effectively a lookup key for the site.
+Findings:
+
+1. **Undefended DoQ leaks completely.** 100 % across 100 websites — a page
+   load's traffic profile is effectively a lookup key for the site.
 2. **More padding does not help.** Maximal padding costs 3× the bandwidth of
-   RFC 8467 and scores no better. The size channel is already closed at 215 %.
-3. **What still leaks is count and timing.** Under RFC 8467, exchange count
-   alone gives 25.0 % and timing alone 18.7 % — and every surviving *length*
-   feature turns out to be re-encoding that same count (`src/ablation.py`).
-   Closing both channels reaches 7.8 %, within 2.8 points of random guessing.
+   RFC 8467 and scores no better (14.9 % vs 15.1 %). This held at both 20 and
+   100 sites. The size channel is already closed at RFC 8467.
+3. **What still leaks is count and timing.** Under RFC 8467 at 100 sites,
+   timing alone gives 10.9 % and exchange count alone 8.0 % (`src/ablation.py`).
+   At 20 sites the order was reversed (count 25 %, timing 19 %) — as the
+   number of sites grows, timing becomes the dominant residual channel.
+4. **Closing both gets closest to the floor, but not all the way.** The
+   adaptive defence reaches 5.5 %, the lowest of any policy — still about
+   5× the 1 % random-guess floor, so residual leakage remains.
 
 ## Quick start
 
@@ -130,7 +139,7 @@ build_deck.js                regenerates the Review-1 deck from the current figu
 
 ## Limitations
 
-- Closed world of 20 sites. The resolver cache makes undefended traces
+- Closed world of 100 sites. The resolver cache makes undefended traces
   near-deterministic, so 100 % is an upper bound, not a field estimate.
 - Traces come from a stub resolver replaying measured domain sets, not from a
   real browser page load.

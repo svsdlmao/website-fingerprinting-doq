@@ -16,7 +16,11 @@ from sklearn.preprocessing import StandardScaler
 from .config import RANDOM_SEED
 
 
-def build(name: str):
+def build(name: str, n_classes: int | None = None):
+    """`n_classes` lets boosting scale its iteration count: HistGradientBoosting
+    fits one tree per class per iteration, so a 100-class problem at 300
+    iterations would mean 30,000 trees.  Capping it keeps the run tractable
+    without materially changing accuracy."""
     if name == "RandomForest":
         return RandomForestClassifier(
             n_estimators=400, max_features="sqrt", min_samples_leaf=1,
@@ -24,7 +28,8 @@ def build(name: str):
 
     if name == "GradientBoosting":
         return HistGradientBoostingClassifier(
-            max_iter=300, learning_rate=0.1, max_leaf_nodes=31,
+            max_iter=300 if (n_classes or 0) <= 40 else 120,
+            learning_rate=0.1, max_leaf_nodes=31,
             early_stopping=False, random_state=RANDOM_SEED)
 
     if name == "MLP":

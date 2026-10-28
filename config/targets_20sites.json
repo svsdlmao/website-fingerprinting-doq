@@ -1,0 +1,398 @@
+[
+  {
+    "site": "arxiv.org",
+    "origin": "arxiv.org",
+    "domains": [
+      "arxiv.org",
+      "info.arxiv.org",
+      "status.arxiv.org",
+      "www.schmidtsciences.org",
+      "www.sfi.org.bm",
+      "www.simonsfoundation.org"
+    ],
+    "html_bytes": 38051
+  },
+  {
+    "site": "edition.cnn.com",
+    "origin": "edition.cnn.com",
+    "domains": [
+      "edition.cnn.com",
+      "accounts.google.com",
+      "ads.pubmatic.com",
+      "agility.cnn.com",
+      "api.business.cnn.io",
+      "api.prod.weather.cnn.io",
+      "appleid.cdn-apple.com",
+      "assets.loginwithamazon.com",
+      "assets.publicgood.com",
+      "atlas.cnn.io",
+      "audience.cnn.com",
+      "bea4.v.fwmrm.net",
+      "buy.tinypass.com",
+      "bvrmvkrkie.execute-api.us-east-1.amazonaws.com"
+    ],
+    "html_bytes": 1999816
+  },
+  {
+    "site": "github.com",
+    "origin": "github.com",
+    "domains": [
+      "github.com",
+      "api.github.com",
+      "api.githubcopilot.com",
+      "archiveprogram.github.com",
+      "avatars.githubusercontent.com",
+      "cli.github.com",
+      "collector.github.com",
+      "docs.github.com",
+      "github-cloud.s3.amazonaws.com",
+      "github.blog",
+      "github.careers",
+      "github.community",
+      "github.githubassets.com",
+      "images.ctfassets.net"
+    ],
+    "html_bytes": 575732
+  },
+  {
+    "site": "news.ycombinator.com",
+    "origin": "news.ycombinator.com",
+    "domains": [
+      "news.ycombinator.com",
+      "asmat.ca",
+      "bw.swerdlow.dev",
+      "dexteroot.net",
+      "dwheeler.com",
+      "en.wikipedia.org",
+      "evaluation.club",
+      "gist.github.com",
+      "github.com",
+      "millenniumproblems.bio",
+      "nullprogram.com",
+      "ooni.org",
+      "phys.org",
+      "pirateface.co"
+    ],
+    "html_bytes": 34192
+  },
+  {
+    "site": "weather.com",
+    "origin": "weather.com",
+    "domains": [
+      "weather.com",
+      "aax.amazon-adsystem.com",
+      "accounts.google.com",
+      "client.aps.amazon-adsystem.com",
+      "config.aps.amazon-adsystem.com",
+      "forecastwatch.com",
+      "hq2zc2zefnwmg3wcm.ay.delivery",
+      "instagram.com",
+      "launchpad-wrapper.privacymanager.io",
+      "launchpad.privacymanager.io",
+      "micro.rubiconproject.com",
+      "redmillgroup.com",
+      "s.w-x.co",
+      "scripts.stay22.com"
+    ],
+    "html_bytes": 423398
+  },
+  {
+    "site": "www.aljazeera.com",
+    "origin": "www.aljazeera.com",
+    "domains": [
+      "www.aljazeera.com",
+      "ajplus.net",
+      "aljazeera.net",
+      "balkans.aljazeera.net",
+      "bsky.app",
+      "careers.aljazeera.net",
+      "cdn.cookielaw.org",
+      "commercial.aljazeera.net",
+      "doc.aljazeera.net",
+      "forum.aljazeera.net",
+      "hotels.aljazeera.net",
+      "learning.aljazeera.net",
+      "liberties.aljazeera.com",
+      "network.aljazeera.net"
+    ],
+    "html_bytes": 517280
+  },
+  {
+    "site": "www.apache.org",
+    "origin": "www.apache.org",
+    "domains": [
+      "www.apache.org",
+      "activemq.apache.org",
+      "airflowsummit.org",
+      "attic.apache.org",
+      "auron.apache.org",
+      "aws.amazon.com",
+      "bifromq.apache.org",
+      "bsky.app",
+      "commons.apache.org",
+      "community.apache.org",
+      "communityovercode.apache.org",
+      "communityovercode.org",
+      "cwiki.apache.org",
+      "cxf.apache.org"
+    ],
+    "html_bytes": 53948
+  },
+  {
+    "site": "www.bbc.com",
+    "origin": "www.bbc.com",
+    "domains": [
+      "www.bbc.com",
+      "account.bbc.com",
+      "advertising.bbcstudios.com",
+      "bbc.com",
+      "cdn.optimizely.com",
+      "cdn.tinypass.com",
+      "emp.bbci.co.uk",
+      "gn-web-assets.api.bbc.com",
+      "help.bbc.com",
+      "ichef.bbci.co.uk",
+      "m.files.bbci.co.uk",
+      "session.bbc.com",
+      "shop.bbc.com",
+      "static.bbci.co.uk"
+    ],
+    "html_bytes": 653755
+  },
+  {
+    "site": "www.debian.org",
+    "origin": "www.debian.org",
+    "domains": [
+      "www.debian.org",
+      "bits.debian.org",
+      "cdimage.debian.org",
+      "ch2026.mini.debconf.org",
+      "micronews.debian.org",
+      "planet.debian.org",
+      "salsa.debian.org",
+      "search.debian.org",
+      "wiki.debian.org",
+      "www.spi-inc.org"
+    ],
+    "html_bytes": 15862
+  },
+  {
+    "site": "www.gutenberg.org",
+    "origin": "www.gutenberg.org",
+    "domains": [
+      "www.gutenberg.org",
+      "bsky.app",
+      "librivox.org",
+      "marhamilresearch4.blob.core.windows.net",
+      "mastodon.social",
+      "self.gutenberg.org",
+      "www.facebook.com",
+      "www.gnu.org",
+      "www.ibiblio.org",
+      "www.paypal.com",
+      "www.pgdp.net"
+    ],
+    "html_bytes": 26524
+  },
+  {
+    "site": "www.harvard.edu",
+    "origin": "www.harvard.edu",
+    "domains": [
+      "www.harvard.edu",
+      "accessibility.harvard.edu",
+      "accessibility.huit.harvard.edu",
+      "alumni.harvard.edu",
+      "arboretum.harvard.edu",
+      "ash.harvard.edu",
+      "calendar.gse.harvard.edu",
+      "ccl.harvard.edu",
+      "ccva.fas.harvard.edu",
+      "cdn.parsely.com",
+      "chsi.emuseum.com",
+      "chsi.harvard.edu",
+      "college.harvard.edu",
+      "commencement.harvard.edu"
+    ],
+    "html_bytes": 176934
+  },
+  {
+    "site": "www.ibm.com",
+    "origin": "www.ibm.com",
+    "domains": [
+      "www.ibm.com",
+      "1.www.s81c.com",
+      "assets.adobedtm.com",
+      "assets.ibm.com",
+      "bob.ibm.com",
+      "community.ibm.com",
+      "en.wikipedia.org",
+      "eum-orange-saas.instana.io",
+      "eum.instana.io",
+      "github.com",
+      "ibm.webcasts.com",
+      "in.newsroom.ibm.com",
+      "newsroom.ibm.com",
+      "research.ibm.com"
+    ],
+    "html_bytes": 203414
+  },
+  {
+    "site": "www.ietf.org",
+    "origin": "www.ietf.org",
+    "domains": [
+      "www.ietf.org",
+      "authors.ietf.org",
+      "bsky.app",
+      "chairs.ietf.org",
+      "datatracker.ietf.org",
+      "draftforge.ietf.org",
+      "github.com",
+      "mailarchive.ietf.org",
+      "static.ietf.org",
+      "status.ietf.org",
+      "trustee.ietf.org",
+      "www.facebook.com",
+      "www.iab.org",
+      "www.iana.org"
+    ],
+    "html_bytes": 84785
+  },
+  {
+    "site": "www.kernel.org",
+    "origin": "www.kernel.org",
+    "domains": [
+      "www.kernel.org",
+      "bugzilla.kernel.org",
+      "cdn.kernel.org",
+      "docs.kernel.org",
+      "git-scm.com",
+      "git.kernel.org",
+      "html5shiv.googlecode.com",
+      "lore.kernel.org",
+      "mirrors.kernel.org",
+      "patchwork.kernel.org",
+      "planet.kernel.org",
+      "rsync.samba.org",
+      "servers.com",
+      "www.akamai.com"
+    ],
+    "html_bytes": 20359
+  },
+  {
+    "site": "www.mit.edu",
+    "origin": "www.mit.edu",
+    "domains": [
+      "www.mit.edu",
+      "calendar.mit.edu",
+      "hr.mit.edu",
+      "learn.mit.edu",
+      "news.mit.edu",
+      "socialmediahub.mit.edu",
+      "tlecms.mit.edu",
+      "twitter.com",
+      "understanding.mit.edu",
+      "web.mit.edu",
+      "whereis.mit.edu",
+      "www.facebook.com",
+      "www.google.com",
+      "www.googletagmanager.com"
+    ],
+    "html_bytes": 47860
+  },
+  {
+    "site": "www.mozilla.org",
+    "origin": "www.mozilla.org",
+    "domains": [
+      "www.mozilla.org",
+      "0din.ai",
+      "abdri3ttkb.execute-api.us-east-2.amazonaws.com",
+      "blog.mozilla.org",
+      "bsky.app",
+      "bugzilla.mozilla.org",
+      "builders.mozilla.org",
+      "datacollective.mozillafoundation.org",
+      "developer.mozilla.org",
+      "firefox-source-docs.mozilla.org",
+      "fortune.com",
+      "mastodon.social",
+      "mozilla.vc",
+      "newproducts.mozilla.org"
+    ],
+    "html_bytes": 115681
+  },
+  {
+    "site": "www.nasa.gov",
+    "origin": "www.nasa.gov",
+    "domains": [
+      "www.nasa.gov",
+      "api.w.org",
+      "assets.science.nasa.gov",
+      "cdn.parsely.com",
+      "ciencia.nasa.gov",
+      "dap.digitalgov.gov",
+      "gmpg.org",
+      "images-assets.nasa.gov",
+      "lp.constantcontactpages.com",
+      "ogp.me",
+      "oig.nasa.gov",
+      "plus.nasa.gov",
+      "rankmath.com",
+      "science.nasa.gov"
+    ],
+    "html_bytes": 355858
+  },
+  {
+    "site": "www.nature.com",
+    "origin": "www.nature.com",
+    "domains": [
+      "www.nature.com",
+      "authorservices.springernature.com",
+      "badges.altmetric.com",
+      "bsky.app",
+      "cmp.nature.com",
+      "conferences.nature.com",
+      "dx.doi.org",
+      "fed-libs.nature.com",
+      "idp.nature.com",
+      "journal-alerts.springernature.com",
+      "masterclasses.nature.com",
+      "media.springernature.com",
+      "mts-nature.nature.com",
+      "partnerships.nature.com"
+    ],
+    "html_bytes": 232055
+  },
+  {
+    "site": "www.theguardian.com",
+    "origin": "www.theguardian.com",
+    "domains": [
+      "www.theguardian.com",
+      "advertising.theguardian.com",
+      "api.nextgen.guardianapps.co.uk",
+      "app.adjust.com",
+      "assets.guim.co.uk",
+      "avatar.guim.co.uk",
+      "avatar.theguardian.com",
+      "bsky.app",
+      "callouts.guardianapis.com",
+      "contributions.guardianapis.com",
+      "developers.google.com",
+      "discussion.theguardian.com",
+      "embed.theguardian.com",
+      "github.com"
+    ],
+    "html_bytes": 1335280
+  },
+  {
+    "site": "www.un.org",
+    "origin": "www.un.org",
+    "domains": [
+      "www.un.org",
+      "code.jquery.com",
+      "maxcdn.bootstrapcdn.com",
+      "ssl.google-analytics.com",
+      "www.googletagmanager.com"
+    ],
+    "html_bytes": 9679
+  }
+]

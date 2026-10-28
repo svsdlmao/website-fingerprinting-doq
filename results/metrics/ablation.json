@@ -1,27 +1,27 @@
 {
   "policy": "rfc8467",
   "model": "RandomForest",
-  "random_guess_pct": 5.0,
+  "random_guess_pct": 1.0,
   "groups": {
     "count only": {
       "n_features": 1,
-      "accuracy": 0.25
+      "accuracy": 0.08
     },
     "volume only": {
       "n_features": 14,
-      "accuracy": 0.25
+      "accuracy": 0.08
     },
     "length shape": {
       "n_features": 85,
-      "accuracy": 0.25
+      "accuracy": 0.08
     },
     "timing only": {
       "n_features": 18,
-      "accuracy": 0.1975
+      "accuracy": 0.10933333333333332
     },
     "all channels": {
       "n_features": 118,
-      "accuracy": 0.2725
+      "accuracy": 0.15133333333333332
     }
   }
 }

@@ -1,5 +1,68 @@
 [
   {
+    "site": "about.readthedocs.com",
+    "origin": "about.readthedocs.com",
+    "domains": [
+      "about.readthedocs.com",
+      "app.readthedocs.com",
+      "app.readthedocs.org",
+      "avatars.githubusercontent.com",
+      "dev.readthedocs.io",
+      "docs.godotengine.org",
+      "docs.jupyter.org",
+      "docs.readthedocs.com",
+      "docs.readthedocs.io",
+      "flask.palletsprojects.com",
+      "fosstodon.org",
+      "github.com",
+      "jupytergis.readthedocs.io",
+      "kit.fontawesome.com"
+    ],
+    "html_bytes": 33493
+  },
+  {
+    "site": "almalinux.org",
+    "origin": "almalinux.org",
+    "domains": [
+      "almalinux.org",
+      "apps.irs.gov",
+      "aws.amazon.com",
+      "azure.microsoft.com",
+      "black.host",
+      "bsky.app",
+      "bugs.almalinux.org",
+      "build.almalinux.org",
+      "catalog.almalinux.org",
+      "cdn.jsdelivr.net",
+      "chat.almalinux.org",
+      "codenotary.com",
+      "engineering.fb.com",
+      "events.almalinux.org"
+    ],
+    "html_bytes": 49005
+  },
+  {
+    "site": "archlinux.org",
+    "origin": "archlinux.org",
+    "domains": [
+      "archlinux.org",
+      "aur.archlinux.org",
+      "bbs.archlinux.org",
+      "co.clickandpledge.com",
+      "devblog.archlinux.page",
+      "fosstodon.org",
+      "github.com",
+      "gitlab.archlinux.org",
+      "icons8.com",
+      "lists.archlinux.org",
+      "man.archlinux.org",
+      "planet.archlinux.org",
+      "rfc.archlinux.page",
+      "security.archlinux.org"
+    ],
+    "html_bytes": 25538
+  },
+  {
     "site": "arxiv.org",
     "origin": "arxiv.org",
     "domains": [
@@ -10,7 +73,41 @@
       "www.sfi.org.bm",
       "www.simonsfoundation.org"
     ],
-    "html_bytes": 38051
+    "html_bytes": 38033
+  },
+  {
+    "site": "commons.wikimedia.org",
+    "origin": "commons.wikimedia.org",
+    "domains": [
+      "commons.wikimedia.org",
+      "ab.wikipedia.org",
+      "abstract.wikipedia.org",
+      "ace.wikipedia.org",
+      "ady.wikipedia.org",
+      "af.wikipedia.org",
+      "als.wikipedia.org",
+      "alt.wikipedia.org",
+      "am.wikipedia.org",
+      "ami.wikipedia.org",
+      "an.wikipedia.org",
+      "ang.wikipedia.org",
+      "ann.wikipedia.org",
+      "anp.wikipedia.org"
+    ],
+    "html_bytes": 246831
+  },
+  {
+    "site": "curl.se",
+    "origin": "curl.se",
+    "domains": [
+      "curl.se",
+      "bestpractices.coreinfrastructure.org",
+      "everything.curl.dev",
+      "github.com",
+      "lists.haxx.se",
+      "youtu.be"
+    ],
+    "html_bytes": 13874
   },
   {
     "site": "edition.cnn.com",
@@ -31,7 +128,61 @@
       "buy.tinypass.com",
       "bvrmvkrkie.execute-api.us-east-1.amazonaws.com"
     ],
-    "html_bytes": 1999816
+    "html_bytes": 1999824
+  },
+  {
+    "site": "ethz.ch",
+    "origin": "ethz.ch",
+    "domains": [
+      "ethz.ch",
+      "arch.ethz.ch",
+      "baug.ethz.ch",
+      "biol.ethz.ch",
+      "bsse.ethz.ch",
+      "chab.ethz.ch",
+      "eaps.ethz.ch",
+      "ee.ethz.ch",
+      "einstein-school.ethz.ch",
+      "esabic.ch",
+      "focusterra.ethz.ch",
+      "gess.ethz.ch",
+      "grantsoffice.ethz.ch",
+      "hest.ethz.ch"
+    ],
+    "html_bytes": 68581
+  },
+  {
+    "site": "european-union.europa.eu",
+    "origin": "european-union.europa.eu",
+    "domains": [
+      "european-union.europa.eu",
+      "ec.europa.eu",
+      "ogp.me",
+      "webtools.europa.eu",
+      "www.drupal.org"
+    ],
+    "html_bytes": 18137
+  },
+  {
+    "site": "fedoraproject.org",
+    "origin": "fedoraproject.org",
+    "domains": [
+      "fedoraproject.org",
+      "accounts.fedoraproject.org",
+      "badges.fedoraproject.org",
+      "bodhi.fedoraproject.org",
+      "bugzilla.redhat.com",
+      "calendar.fedoraproject.org",
+      "chat.fedoraproject.org",
+      "communityblog.fedoraproject.org",
+      "copr.fedorainfracloud.org",
+      "developer.fedoraproject.org",
+      "digitalpublicgoods.net",
+      "discussion.fedoraproject.org",
+      "docs.fedoraproject.org",
+      "elections.fedoraproject.org"
+    ],
+    "html_bytes": 261476
   },
   {
     "site": "github.com",
@@ -52,28 +203,537 @@
       "github.githubassets.com",
       "images.ctfassets.net"
     ],
-    "html_bytes": 575732
+    "html_bytes": 572878
+  },
+  {
+    "site": "gitlab.com",
+    "origin": "gitlab.com",
+    "domains": [
+      "gitlab.com",
+      "about.gitlab.com",
+      "cdn.bizible.com",
+      "cdn.cookielaw.org",
+      "cdn.optimizely.com",
+      "client-registry.mutinycdn.com",
+      "customers.gitlab.com",
+      "docs.gitlab.com",
+      "en.wikipedia.org",
+      "fontawesome.com",
+      "geolocation.onetrust.com",
+      "handbook.gitlab.com",
+      "ir.gitlab.com",
+      "marrow.gitlab-marketing.workers.dev"
+    ],
+    "html_bytes": 219051
+  },
+  {
+    "site": "go.dev",
+    "origin": "go.dev",
+    "domains": [
+      "go.dev",
+      "aws.amazon.com",
+      "bitly.com",
+      "blog.cloudflare.com",
+      "blog.twitch.tv",
+      "blog.x.com",
+      "bosssauce.it",
+      "bsky.app",
+      "cloud.google.com",
+      "cloudblogs.microsoft.com",
+      "dropbox.tech",
+      "eng.uber.com",
+      "entgo.io",
+      "fonts.googleapis.com"
+    ],
+    "html_bytes": 64151
+  },
+  {
+    "site": "home.cern",
+    "origin": "home.cern",
+    "domains": [
+      "home.cern",
+      "alumni.cern",
+      "arts.cern",
+      "careers.cern",
+      "cern.ch",
+      "cernandsocietyfoundation.cern",
+      "cerncourier.com",
+      "copyright.web.cern.ch",
+      "educational-resources.web.cern.ch",
+      "linktr.ee",
+      "s.w.org",
+      "visit.cern",
+      "voisins.web.cern.ch",
+      "webanalytics.web.cern.ch"
+    ],
+    "html_bytes": 298343
+  },
+  {
+    "site": "iisc.ac.in",
+    "origin": "iisc.ac.in",
+    "domains": [
+      "iisc.ac.in",
+      "admissions.iisc.ac.in",
+      "admissions.iisc.ernet.in",
+      "alumni.iisc.ac.in",
+      "bs-ug.iisc.ac.in",
+      "btech-ug.iisc.ac.in",
+      "cce.iisc.ac.in",
+      "cce.iisc.ernet.in",
+      "cdnjs.cloudflare.com",
+      "code.jquery.com",
+      "connect.iisc.ac.in",
+      "cse.google.com",
+      "csic.iisc.ac.in",
+      "eprints.iisc.ac.in"
+    ],
+    "html_bytes": 126169
+  },
+  {
+    "site": "indianexpress.com",
+    "origin": "indianexpress.com",
+    "domains": [
+      "indianexpress.com",
+      "8a95f4.clients.bidcliq.com",
+      "accounts.indianexpress.com",
+      "ads.pubmatic.com",
+      "api.w.org",
+      "apis.google.com",
+      "bengali.indianexpress.com",
+      "cdn.moengage.com",
+      "connect.facebook.net",
+      "dup.indianexpress.com",
+      "expressgroup.indianexpress.com",
+      "expresstributes.com",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com"
+    ],
+    "html_bytes": 722617
+  },
+  {
+    "site": "jupyter.org",
+    "origin": "jupyter.org",
+    "domains": [
+      "jupyter.org",
+      "blog.jupyter.org",
+      "bsky.app",
+      "cdn.jsdelivr.net",
+      "cocalc.com",
+      "codeneuro.org",
+      "developer.rackspace.com",
+      "docs.jupyter.org",
+      "events.linuxfoundation.org",
+      "github.com",
+      "hachyderm.io",
+      "js.hsforms.net",
+      "jupyter-notebook.readthedocs.io",
+      "jupyterbook.org"
+    ],
+    "html_bytes": 39550
+  },
+  {
+    "site": "kde.org",
+    "origin": "kde.org",
+    "domains": [
+      "kde.org",
+      "akademy.kde.org",
+      "api.kde.org",
+      "apps.kde.org",
+      "blogs.kde.org",
+      "bsky.app",
+      "cdn.kde.org",
+      "community.kde.org",
+      "conf.kde.in",
+      "develop.kde.org",
+      "doc.qt.io",
+      "eco.kde.org",
+      "endof10.org",
+      "ev.kde.org"
+    ],
+    "html_bytes": 54659
+  },
+  {
+    "site": "kotlinlang.org",
+    "origin": "kotlinlang.org",
+    "domains": [
+      "kotlinlang.org",
+      "api.ktor.io",
+      "blog.jetbrains.com",
+      "bsky.app",
+      "cdn.optimizely.com",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "github.com",
+      "img.youtube.com",
+      "jetbrains.com",
+      "job-boards.eu.greenhouse.io",
+      "kotlinfoundation.org",
+      "medium.com",
+      "open.spotify.com"
+    ],
+    "html_bytes": 73295
+  },
+  {
+    "site": "kubernetes.io",
+    "origin": "kubernetes.io",
+    "domains": [
+      "kubernetes.io",
+      "bsky.app",
+      "calendar.google.com",
+      "cncf.io",
+      "code.jquery.com",
+      "discuss.kubernetes.io",
+      "events.linuxfoundation.org",
+      "git.k8s.io",
+      "github.com",
+      "k8s.dev",
+      "lfprojects.org",
+      "queue.acm.org",
+      "serverfault.com",
+      "slack.k8s.io"
+    ],
+    "html_bytes": 41531
+  },
+  {
+    "site": "linuxmint.com",
+    "origin": "linuxmint.com",
+    "domains": [
+      "linuxmint.com",
+      "app.element.io",
+      "blog.linuxmint.com",
+      "bmail.ag",
+      "community.linuxmint.com",
+      "discord.gg",
+      "duckduckgo.com",
+      "forums.linuxmint.com",
+      "github.com",
+      "kiwiirc.com",
+      "linuxmint-installation-guide.readthedocs.io",
+      "linuxmint-user-guide.readthedocs.io",
+      "linuxmint.thinkpenguin.com",
+      "mastodon.social"
+    ],
+    "html_bytes": 38480
+  },
+  {
+    "site": "matplotlib.org",
+    "origin": "matplotlib.org",
+    "domains": [
+      "matplotlib.org",
+      "blog.scientific-python.org",
+      "discourse.matplotlib.org",
+      "docs.astropy.org",
+      "github.com",
+      "gitter.im",
+      "ieeexplore.ieee.org",
+      "instagram.com",
+      "mybinder.org",
+      "numfocus.org",
+      "plotnine.readthedocs.io",
+      "scientific-python.org",
+      "scitools.org.uk",
+      "seaborn.pydata.org"
+    ],
+    "html_bytes": 34873
   },
   {
     "site": "news.ycombinator.com",
     "origin": "news.ycombinator.com",
     "domains": [
       "news.ycombinator.com",
-      "asmat.ca",
-      "bw.swerdlow.dev",
-      "dexteroot.net",
-      "dwheeler.com",
-      "en.wikipedia.org",
-      "evaluation.club",
-      "gist.github.com",
+      "blog.apnic.net",
+      "blog.lorenzano.eu",
+      "brooker.co.za",
+      "ciechanow.ski",
+      "deepmind.google",
+      "dfarq.homeip.net",
+      "e360.yale.edu",
+      "elizagen.org",
+      "felixrieseberg.com",
       "github.com",
-      "millenniumproblems.bio",
-      "nullprogram.com",
-      "ooni.org",
-      "phys.org",
-      "pirateface.co"
+      "lab.specr.net",
+      "marcpaul.io",
+      "museumofages.org"
     ],
-    "html_bytes": 34192
+    "html_bytes": 34683
+  },
+  {
+    "site": "nginx.org",
+    "origin": "nginx.org",
+    "domains": [
+      "nginx.org",
+      "blog.nginx.org",
+      "community.nginx.org",
+      "docs.nginx.com",
+      "github.com",
+      "kubernetes.nginx.org",
+      "sysoev.ru"
+    ],
+    "html_bytes": 6988
+  },
+  {
+    "site": "nodejs.org",
+    "origin": "nodejs.org",
+    "domains": [
+      "nodejs.org",
+      "ai-coding-assistants-policy.openjsf.org",
+      "beta.docs.nodejs.org",
+      "bsky.app",
+      "bylaws.openjsf.org",
+      "code-of-conduct.openjsf.org",
+      "discord.gg",
+      "github.com",
+      "herodevs.com",
+      "macstadium.com",
+      "microsoft.com",
+      "nodesource.com",
+      "openjsf.org",
+      "privacy-policy.openjsf.org"
+    ],
+    "html_bytes": 531734
+  },
+  {
+    "site": "numpy.org",
+    "origin": "numpy.org",
+    "domains": [
+      "numpy.org",
+      "ai.googleblog.com",
+      "airflow.apache.org",
+      "altair-viz.github.io",
+      "arrow.apache.org",
+      "arviz-devs.github.io",
+      "awkward-array.org",
+      "biopython.org",
+      "cantera.org",
+      "catboost.ai",
+      "cdnjs.cloudflare.com",
+      "cityenergyanalyst.com",
+      "code.jquery.com",
+      "compas.dev"
+    ],
+    "html_bytes": 37349
+  },
+  {
+    "site": "openlibrary.org",
+    "origin": "openlibrary.org",
+    "domains": [
+      "openlibrary.org",
+      "apollo.archive.org",
+      "archive.org",
+      "athena.archive.org",
+      "blog.openlibrary.org",
+      "bsky.app",
+      "docs.openlibrary.org",
+      "forms.gle",
+      "github.com",
+      "twitter.com",
+      "www.gnu.org"
+    ],
+    "html_bytes": 114272
+  },
+  {
+    "site": "pandas.pydata.org",
+    "origin": "pandas.pydata.org",
+    "domains": [
+      "pandas.pydata.org",
+      "amzn.to",
+      "cdn.jsdelivr.net",
+      "fosstodon.org",
+      "github.com",
+      "numfocus.org",
+      "stackoverflow.com",
+      "store.metasnake.com",
+      "tidelift.com",
+      "views.scientific-python.org",
+      "www.bodo.ai",
+      "www.nvidia.com",
+      "www.packtpub.com",
+      "www.python.org"
+    ],
+    "html_bytes": 18294
+  },
+  {
+    "site": "pypi.org",
+    "origin": "pypi.org",
+    "domains": [
+      "pypi.org",
+      "2p66nmmycsj3.statuspage.io",
+      "about.facebook.com",
+      "aka.ms",
+      "analytics.python.org",
+      "aws.amazon.com",
+      "blog.pypi.org",
+      "careers.google.com",
+      "depot.dev",
+      "developer.nvidia.com",
+      "docs.pypi.org",
+      "donate.pypi.org",
+      "dtdg.co",
+      "github.com"
+    ],
+    "html_bytes": 27928
+  },
+  {
+    "site": "pytorch.org",
+    "origin": "pytorch.org",
+    "domains": [
+      "pytorch.org",
+      "aws.amazon.com",
+      "azure.microsoft.com",
+      "cloud.google.com",
+      "custom.transaction",
+      "discord.com",
+      "discuss.pytorch.org",
+      "docs.aws.amazon.com",
+      "docs.microsoft.com",
+      "docs.pytorch.org",
+      "download.pytorch.org",
+      "events.linuxfoundation.org",
+      "github.com",
+      "join.slack.com"
+    ],
+    "html_bytes": 216502
+  },
+  {
+    "site": "redis.io",
+    "origin": "redis.io",
+    "domains": [
+      "redis.io",
+      "a.quora.com",
+      "azure.microsoft.com",
+      "cdn.sanity.io",
+      "chatgpt.com",
+      "claude.ai",
+      "cloud.redis.io",
+      "connect.facebook.net",
+      "consent.trustarc.com",
+      "docs.cloud.google.com",
+      "github.com",
+      "pixel.byspotify.com",
+      "static.ads-twitter.com",
+      "static.cloudflareinsights.com"
+    ],
+    "html_bytes": 1749799
+  },
+  {
+    "site": "rockylinux.org",
+    "origin": "rockylinux.org",
+    "domains": [
+      "rockylinux.org",
+      "45drives.com",
+      "access.redhat.com",
+      "advancedclustering.com",
+      "arm.com",
+      "aws.com",
+      "bsky.app",
+      "chat.rockylinux.org",
+      "ciq.com",
+      "cloud.google.com",
+      "crowdin.com",
+      "digitalpublicgoods.net",
+      "docs.rockylinux.org",
+      "equinix.com"
+    ],
+    "html_bytes": 342163
+  },
+  {
+    "site": "scipy.org",
+    "origin": "scipy.org",
+    "domains": [
+      "scipy.org",
+      "cdnjs.cloudflare.com",
+      "conference.scipy.org",
+      "discuss.scientific-python.org",
+      "docs.scipy.org",
+      "github.com",
+      "scipy.github.io",
+      "views.scientific-python.org"
+    ],
+    "html_bytes": 18738
+  },
+  {
+    "site": "slashdot.org",
+    "origin": "slashdot.org",
+    "domains": [
+      "slashdot.org",
+      "abcnews.com",
+      "arstechnica.com",
+      "azure.microsoft.com",
+      "blog.character.ai",
+      "blog.google",
+      "bsky.app",
+      "code.overheid.nl",
+      "deadline.com",
+      "deals.slashdot.org",
+      "developers.slashdot.org",
+      "entertainment.slashdot.org",
+      "finance.yahoo.com",
+      "games.slashdot.org"
+    ],
+    "html_bytes": 134887
+  },
+  {
+    "site": "techcrunch.com",
+    "origin": "techcrunch.com",
+    "domains": [
+      "techcrunch.com",
+      "api.w.org",
+      "bsky.app",
+      "castlereach.com",
+      "challenges.cloudflare.com",
+      "experiments.parsely.com",
+      "instagram.com",
+      "mstdn.social",
+      "oidc.techcrunch.com",
+      "public.servenobid.com",
+      "s.w.org",
+      "stats.wp.com",
+      "strictlyvc.com",
+      "succeedscene.com"
+    ],
+    "html_bytes": 465645
+  },
+  {
+    "site": "ubuntu.com",
+    "origin": "ubuntu.com",
+    "domains": [
+      "ubuntu.com",
+      "assets.ubuntu.com",
+      "azure.microsoft.com",
+      "canonical-robotics.readthedocs-hosted.com",
+      "canonical.com",
+      "cloud-images.ubuntu.com",
+      "cloud.google.com",
+      "cn.ubuntu.com",
+      "discourse.ubuntu.com",
+      "docs.google.com",
+      "documentation.ubuntu.com",
+      "github.com",
+      "jp.ubuntu.com",
+      "juju.is"
+    ],
+    "html_bytes": 209716
+  },
+  {
+    "site": "vit.ac.in",
+    "origin": "vit.ac.in",
+    "domains": [
+      "vit.ac.in",
+      "accounts.google.com",
+      "admissionresults.vit.ac.in",
+      "admissions.vit.ac.in",
+      "api.w.org",
+      "applications.wes.org",
+      "blogs.vit.ac.in",
+      "campustour.vit.ac.in",
+      "careers.vit.ac.in",
+      "chennai.vit.ac.in",
+      "code.responsivevoice.org",
+      "crf.vit.ac.in",
+      "en.wikipedia.org",
+      "events.vit.ac.in"
+    ],
+    "html_bytes": 576618
   },
   {
     "site": "weather.com",
@@ -82,19 +742,40 @@
       "weather.com",
       "aax.amazon-adsystem.com",
       "accounts.google.com",
+      "bagave.com",
+      "c.amazon-adsystem.com",
       "client.aps.amazon-adsystem.com",
       "config.aps.amazon-adsystem.com",
-      "forecastwatch.com",
       "hq2zc2zefnwmg3wcm.ay.delivery",
       "instagram.com",
       "launchpad-wrapper.privacymanager.io",
       "launchpad.privacymanager.io",
       "micro.rubiconproject.com",
-      "redmillgroup.com",
       "s.w-x.co",
       "scripts.stay22.com"
     ],
-    "html_bytes": 423398
+    "html_bytes": 356375
+  },
+  {
+    "site": "www.abc.net.au",
+    "origin": "www.abc.net.au",
+    "domains": [
+      "www.abc.net.au",
+      "apple.news",
+      "australiatalks.abc.net.au",
+      "collector.abc.net.au",
+      "en.wikipedia.org",
+      "facebook.com",
+      "help.abc.net.au",
+      "iview.abc.net.au",
+      "live-production.wcms.abc-cdn.net.au",
+      "login.abc.net.au",
+      "mediacore-live-production.akamaized.net",
+      "soundcloud.com",
+      "static.abc-cdn.net.au",
+      "www.facebook.com"
+    ],
+    "html_bytes": 802760
   },
   {
     "site": "www.aljazeera.com",
@@ -115,28 +796,49 @@
       "liberties.aljazeera.com",
       "network.aljazeera.net"
     ],
-    "html_bytes": 517280
+    "html_bytes": 462272
+  },
+  {
+    "site": "www.amd.com",
+    "origin": "www.amd.com",
+    "domains": [
+      "www.amd.com",
+      "account.amd.com",
+      "adaptivesupport.amd.com",
+      "amd.entitlenow.com",
+      "amdfanstore.com",
+      "developer.amd.com",
+      "discord.com",
+      "discord.gg",
+      "docs.amd.com",
+      "download.amd.com",
+      "ga.jspm.io",
+      "github.com",
+      "gpuopen.com",
+      "ir.amd.com"
+    ],
+    "html_bytes": 208391
   },
   {
     "site": "www.apache.org",
     "origin": "www.apache.org",
     "domains": [
       "www.apache.org",
-      "activemq.apache.org",
-      "airflowsummit.org",
+      "arrow.apache.org",
       "attic.apache.org",
-      "auron.apache.org",
       "aws.amazon.com",
       "bifromq.apache.org",
       "bsky.app",
-      "commons.apache.org",
       "community.apache.org",
       "communityovercode.apache.org",
       "communityovercode.org",
       "cwiki.apache.org",
-      "cxf.apache.org"
+      "diversity.apache.org",
+      "donate.apache.org",
+      "downloads.apache.org",
+      "events.apache.org"
     ],
-    "html_bytes": 53948
+    "html_bytes": 52499
   },
   {
     "site": "www.bbc.com",
@@ -151,13 +853,214 @@
       "emp.bbci.co.uk",
       "gn-web-assets.api.bbc.com",
       "help.bbc.com",
+      "ichef.bbc.co.uk",
       "ichef.bbci.co.uk",
       "m.files.bbci.co.uk",
       "session.bbc.com",
-      "shop.bbc.com",
-      "static.bbci.co.uk"
+      "shop.bbc.com"
     ],
-    "html_bytes": 653755
+    "html_bytes": 669263
+  },
+  {
+    "site": "www.berkeley.edu",
+    "origin": "www.berkeley.edu",
+    "domains": [
+      "www.berkeley.edu",
+      "admissions.berkeley.edu",
+      "api.w.org",
+      "bconnected.berkeley.edu",
+      "bsky.app",
+      "calbears.com",
+      "calparents.berkeley.edu",
+      "classes.berkeley.edu",
+      "dap.berkeley.edu",
+      "diversity.berkeley.edu",
+      "events.berkeley.edu",
+      "extension.berkeley.edu",
+      "financialaid.berkeley.edu",
+      "fonts.googleapis.com"
+    ],
+    "html_bytes": 76101
+  },
+  {
+    "site": "www.biorxiv.org",
+    "origin": "www.biorxiv.org",
+    "domains": [
+      "www.biorxiv.org",
+      "cdn.jsdelivr.net",
+      "d33xdlntwy0kbs.cloudfront.net",
+      "drupal.org",
+      "html5shiv.googlecode.com",
+      "ogp.me",
+      "www.cshl.edu",
+      "www.googletagmanager.com"
+    ],
+    "html_bytes": 31825
+  },
+  {
+    "site": "www.blender.org",
+    "origin": "www.blender.org",
+    "domains": [
+      "www.blender.org",
+      "analytics.blender.org",
+      "api.w.org",
+      "blender.org",
+      "bsky.app",
+      "builder.blender.org",
+      "code.blender.org",
+      "conference.blender.org",
+      "developer.blender.org",
+      "devtalk.blender.org",
+      "docs.blender.org",
+      "extensions.blender.org",
+      "flamenco.blender.org",
+      "fund.blender.org"
+    ],
+    "html_bytes": 116899
+  },
+  {
+    "site": "www.bundesregierung.de",
+    "origin": "www.bundesregierung.de",
+    "domains": [
+      "www.bundesregierung.de",
+      "analytics.bundesregierung.de",
+      "dashboard.stage.bio",
+      "social.bund.de",
+      "www.bundeskanzler.de",
+      "www.facebook.com",
+      "www.instagram.com",
+      "www.publikationen-bundesregierung.de",
+      "www.tiktok.com",
+      "www.whatsapp.com",
+      "www.youtube.com"
+    ],
+    "html_bytes": 194760
+  },
+  {
+    "site": "www.caltech.edu",
+    "origin": "www.caltech.edu",
+    "domains": [
+      "www.caltech.edu",
+      "access.caltech.edu",
+      "archives.caltech.edu",
+      "beckmaninstitute.caltech.edu",
+      "bot.caltech.edu",
+      "breakthrough.caltech.edu",
+      "brinsonhub.caltech.edu",
+      "browninstitute.caltech.edu",
+      "bsky.app",
+      "burkeinstitute.caltech.edu",
+      "caltech-prod.resources.caltech.edu",
+      "caltech.us5.list-manage.com",
+      "career.caltech.edu",
+      "cast.caltech.edu"
+    ],
+    "html_bytes": 352759
+  },
+  {
+    "site": "www.cam.ac.uk",
+    "origin": "www.cam.ac.uk",
+    "domains": [
+      "www.cam.ac.uk",
+      "custom.transaction",
+      "executiveprofessional.cam.ac.uk",
+      "github.com",
+      "js-agent.newrelic.com",
+      "map.cam.ac.uk",
+      "ogp.me",
+      "purl.org",
+      "rdfs.org",
+      "search.cam.ac.uk",
+      "use.fontawesome.com",
+      "www.admin.cam.ac.uk",
+      "www.alumni.cam.ac.uk",
+      "www.cambridge.org"
+    ],
+    "html_bytes": 111734
+  },
+  {
+    "site": "www.cbc.ca",
+    "origin": "www.cbc.ca",
+    "domains": [
+      "www.cbc.ca",
+      "ad.crwdcntrl.net",
+      "adservice.google.ca",
+      "cbc.ca",
+      "cbc.radio-canada.ca",
+      "cbchelp.cbc.ca",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "gem.cbc.ca",
+      "i.cbc.ca",
+      "ici.radio-canada.ca",
+      "imasdk.googleapis.com",
+      "liveimages.cbc.ca",
+      "login.cbc.ca"
+    ],
+    "html_bytes": 464162
+  },
+  {
+    "site": "www.cloudflare.com",
+    "origin": "www.cloudflare.com",
+    "domains": [
+      "www.cloudflare.com",
+      "4511ab53-3e12-45ba-b984-f1a732ac9ec0.search.ai.cloudflare.com",
+      "blog.cloudflare.com",
+      "cloudflare.net",
+      "dash.cloudflare.com",
+      "developers.cloudflare.com",
+      "domains.cloudflare.com",
+      "github.com",
+      "imagedelivery.net",
+      "one.one.one.one",
+      "ot.www.cloudflare.com",
+      "partnerlocator.cloudflare.com",
+      "radar.cloudflare.com",
+      "static.cloudflareinsights.com"
+    ],
+    "html_bytes": 1334300
+  },
+  {
+    "site": "www.cmu.edu",
+    "origin": "www.cmu.edu",
+    "domains": [
+      "www.cmu.edu",
+      "athletics.cmu.edu",
+      "bookstore.web.cmu.edu",
+      "bsky.app",
+      "cse.google.com",
+      "events.cmu.edu",
+      "givenow.cmu.edu",
+      "miami.cmu.edu",
+      "ogp.me",
+      "rainier.accessiblelearning.com",
+      "research.cmu.edu",
+      "scholars.cmu.edu",
+      "twitter.com",
+      "unpkg.com"
+    ],
+    "html_bytes": 90061
+  },
+  {
+    "site": "www.cornell.edu",
+    "origin": "www.cornell.edu",
+    "domains": [
+      "www.cornell.edu",
+      "admissions.cornell.edu",
+      "alumni.cornell.edu",
+      "cals.cornell.edu",
+      "cdn.universityrelations.cornell.edu",
+      "compliance.enrollment.cornell.edu",
+      "cornellbotanicgardens.org",
+      "courses.cornell.edu",
+      "ctl.cornell.edu",
+      "cuinfo.cornell.edu",
+      "diversity.cornell.edu",
+      "emergency.cornell.edu",
+      "engagedcornellhub.cornell.edu",
+      "events.cornell.edu"
+    ],
+    "html_bytes": 80610
   },
   {
     "site": "www.debian.org",
@@ -174,7 +1077,232 @@
       "wiki.debian.org",
       "www.spi-inc.org"
     ],
-    "html_bytes": 15862
+    "html_bytes": 15864
+  },
+  {
+    "site": "www.digitalocean.com",
+    "origin": "www.digitalocean.com",
+    "domains": [
+      "www.digitalocean.com",
+      "cdn.amplitude.com",
+      "cloud.digitalocean.com",
+      "consent.trustarc.com",
+      "css-tricks.com",
+      "discord.gg",
+      "docs.digitalocean.com",
+      "doimages.nyc3.cdn.digitaloceanspaces.com",
+      "github.com",
+      "ideas.digitalocean.com",
+      "investors.digitalocean.com",
+      "status.digitalocean.com",
+      "store.digitalocean.com",
+      "twitter.com"
+    ],
+    "html_bytes": 299658
+  },
+  {
+    "site": "www.docker.com",
+    "origin": "www.docker.com",
+    "domains": [
+      "www.docker.com",
+      "api.w.org",
+      "app.docker.com",
+      "assets.adobedtm.com",
+      "cdn.cookielaw.org",
+      "custom.transaction",
+      "desktop.docker.com",
+      "dockerstatus.com",
+      "docs.docker.com",
+      "fonts.googleapis.com",
+      "github.com",
+      "i.ytimg.com",
+      "js-agent.newrelic.com",
+      "marlin-2.docker.com"
+    ],
+    "html_bytes": 500915
+  },
+  {
+    "site": "www.engadget.com",
+    "origin": "www.engadget.com",
+    "domains": [
+      "www.engadget.com",
+      "btloader.com",
+      "cafemedia-com.videoplayerhub.com",
+      "flipboard.com",
+      "launcher.spot.im",
+      "news.google.com",
+      "profile.google.com",
+      "subscribe.engadget.com",
+      "www.bgr.com",
+      "www.carscoops.com",
+      "www.facebook.com",
+      "www.googletagmanager.com",
+      "www.instagram.com",
+      "www.jalopnik.com"
+    ],
+    "html_bytes": 109283
+  },
+  {
+    "site": "www.epfl.ch",
+    "origin": "www.epfl.ch",
+    "domains": [
+      "www.epfl.ch",
+      "actu.epfl.ch",
+      "api.w.org",
+      "cdnjs.cloudflare.com",
+      "epfl.shorthandstories.com",
+      "gmpg.org",
+      "go.epfl.ch",
+      "instagram.com",
+      "map.epfl.ch",
+      "memento.epfl.ch",
+      "s.w.org",
+      "search.epfl.ch",
+      "social.epfl.ch",
+      "sti.epfl.ch"
+    ],
+    "html_bytes": 77625
+  },
+  {
+    "site": "www.esa.int",
+    "origin": "www.esa.int",
+    "domains": [
+      "www.esa.int",
+      "blogs.esa.int",
+      "brand.esa.int",
+      "bsky.app",
+      "code.jquery.com",
+      "commercialisation.esa.int",
+      "discover.esa.int",
+      "ideas.esa.int",
+      "twitter.com",
+      "www-analytics.esa.int",
+      "www.facebook.com",
+      "www.instagram.com",
+      "www.linkedin.com",
+      "www.pinterest.com"
+    ],
+    "html_bytes": 55767
+  },
+  {
+    "site": "www.etsi.org",
+    "origin": "www.etsi.org",
+    "domains": [
+      "www.etsi.org",
+      "api.w.org",
+      "directory.cookieyes.com",
+      "player.vimeo.com",
+      "portal.etsi.org",
+      "s.w.org",
+      "www.googletagmanager.com",
+      "www.linkedin.com",
+      "www.webtoffee.com",
+      "www.youtube.com",
+      "yoast.com"
+    ],
+    "html_bytes": 190122
+  },
+  {
+    "site": "www.euronews.com",
+    "origin": "www.euronews.com",
+    "domains": [
+      "www.euronews.com",
+      "api.privacy-center.org",
+      "apps.apple.com",
+      "arabic.euronews.com",
+      "bend.libelintent.com",
+      "cdn.jwplayer.com",
+      "connect.facebook.net",
+      "de.euronews.com",
+      "did.tech.euronews.com",
+      "es.euronews.com",
+      "euronews.bg",
+      "euronewsgeorgia.com",
+      "events.euronews.com",
+      "flipboard.com"
+    ],
+    "html_bytes": 502982
+  },
+  {
+    "site": "www.freebsd.org",
+    "origin": "www.freebsd.org",
+    "domains": [
+      "www.freebsd.org",
+      "bhyve.org",
+      "bugs.freebsd.org",
+      "cgit.freebsd.org",
+      "ci.freebsd.org",
+      "docs.freebsd.org",
+      "download.freebsd.org",
+      "duckduckgo.com",
+      "forums.freebsd.org",
+      "freebsdfoundation.org",
+      "github.com",
+      "lists.freebsd.org",
+      "man.freebsd.org",
+      "openzfs.github.io"
+    ],
+    "html_bytes": 22159
+  },
+  {
+    "site": "www.gentoo.org",
+    "origin": "www.gentoo.org",
+    "domains": [
+      "www.gentoo.org",
+      "archives.gentoo.org",
+      "assets.gentoo.org",
+      "blogs.gentoo.org",
+      "bugs.gentoo.org",
+      "copy.fail",
+      "creativecommons.org",
+      "devmanual.gentoo.org",
+      "forums.gentoo.org",
+      "fosstodon.org",
+      "get.gentoo.org",
+      "github.com",
+      "gitweb.gentoo.org",
+      "infra-status.gentoo.org"
+    ],
+    "html_bytes": 24590
+  },
+  {
+    "site": "www.gnome.org",
+    "origin": "www.gnome.org",
+    "domains": [
+      "www.gnome.org",
+      "abusix.com",
+      "apps.gnome.org",
+      "aws.amazon.com",
+      "brand.gnome.org",
+      "canonical.com",
+      "circle.gnome.org",
+      "conduct.gnome.org",
+      "deploy.equinix.com",
+      "developer.gnome.org",
+      "discourse.gnome.org",
+      "donate.gnome.org",
+      "endof10.org",
+      "fedoraproject.org"
+    ],
+    "html_bytes": 26478
+  },
+  {
+    "site": "www.govt.nz",
+    "origin": "www.govt.nz",
+    "domains": [
+      "www.govt.nz",
+      "apps.apple.com",
+      "endoflife.services.govt.nz",
+      "ogp.me",
+      "play.google.com",
+      "smartstart.services.govt.nz",
+      "staticcdn.co.nz",
+      "turnonjs.com",
+      "vote.nz",
+      "www.google-analytics.com",
+      "www.googletagmanager.com"
+    ],
+    "html_bytes": 34112
   },
   {
     "site": "www.gutenberg.org",
@@ -182,7 +1310,10 @@
     "domains": [
       "www.gutenberg.org",
       "bsky.app",
+      "github.com",
       "librivox.org",
+      "lists.pglaf.org",
+      "lucide.dev",
       "marhamilresearch4.blob.core.windows.net",
       "mastodon.social",
       "self.gutenberg.org",
@@ -192,7 +1323,7 @@
       "www.paypal.com",
       "www.pgdp.net"
     ],
-    "html_bytes": 26524
+    "html_bytes": 30641
   },
   {
     "site": "www.harvard.edu",
@@ -201,19 +1332,94 @@
       "www.harvard.edu",
       "accessibility.harvard.edu",
       "accessibility.huit.harvard.edu",
+      "africa.harvard.edu",
+      "alari.fas.harvard.edu",
       "alumni.harvard.edu",
       "arboretum.harvard.edu",
-      "ash.harvard.edu",
-      "calendar.gse.harvard.edu",
+      "asiacenter.harvard.edu",
+      "atlas.hks.harvard.edu",
+      "bsc.hks.harvard.edu",
       "ccl.harvard.edu",
       "ccva.fas.harvard.edu",
       "cdn.parsely.com",
-      "chsi.emuseum.com",
-      "chsi.harvard.edu",
-      "college.harvard.edu",
-      "commencement.harvard.edu"
+      "ces.fas.harvard.edu"
     ],
-    "html_bytes": 176934
+    "html_bytes": 186554
+  },
+  {
+    "site": "www.haskell.org",
+    "origin": "www.haskell.org",
+    "domains": [
+      "www.haskell.org",
+      "bellroy.com",
+      "bitnomial.com",
+      "blog.haskell.org",
+      "cdn.jsdelivr.net",
+      "finn.no",
+      "fission.codes",
+      "github.com",
+      "hackage.haskell.org",
+      "hasura.io",
+      "i1.ytimg.com",
+      "iohk.io",
+      "mercury.com",
+      "play.haskell.org"
+    ],
+    "html_bytes": 63006
+  },
+  {
+    "site": "www.hetzner.com",
+    "origin": "www.hetzner.com",
+    "domains": [
+      "www.hetzner.com",
+      "abuse.hetzner.com",
+      "career.hetzner.com",
+      "cdn.hetzner.com",
+      "community.hetzner.com",
+      "console.hetzner.com",
+      "docs.hetzner.cloud",
+      "docs.hetzner.com",
+      "forum.hetzner.com",
+      "konsoleh.hetzner.com",
+      "mastodon.hetzner.social",
+      "robot.hetzner.com",
+      "status.hetzner.com",
+      "twitter.com"
+    ],
+    "html_bytes": 100802
+  },
+  {
+    "site": "www.hindustantimes.com",
+    "origin": "www.hindustantimes.com",
+    "domains": [
+      "www.hindustantimes.com",
+      "accounts.hindustantimes.com",
+      "adservice.google.co.in",
+      "adservice.google.com",
+      "analytics.dev.htmedia.in",
+      "analytics.htmedia.in",
+      "api.hindustantimes.com",
+      "api.whatsapp.com",
+      "apps.apple.com",
+      "auto.hindustantimes.com",
+      "bit.ly",
+      "c.amazon-adsystem.com",
+      "cdn.izooto.com",
+      "cdn.jsdelivr.net"
+    ],
+    "html_bytes": 980605
+  },
+  {
+    "site": "www.iana.org",
+    "origin": "www.iana.org",
+    "domains": [
+      "www.iana.org",
+      "cse.google.com",
+      "iana.org",
+      "pti.icann.org",
+      "www.icann.org"
+    ],
+    "html_bytes": 6251
   },
   {
     "site": "www.ibm.com",
@@ -229,12 +1435,12 @@
       "eum-orange-saas.instana.io",
       "eum.instana.io",
       "github.com",
-      "ibm.webcasts.com",
       "in.newsroom.ibm.com",
       "newsroom.ibm.com",
-      "research.ibm.com"
+      "research.ibm.com",
+      "rum.hlx.page"
     ],
-    "html_bytes": 203414
+    "html_bytes": 197204
   },
   {
     "site": "www.ietf.org",
@@ -255,7 +1461,130 @@
       "www.iab.org",
       "www.iana.org"
     ],
-    "html_bytes": 84785
+    "html_bytes": 84787
+  },
+  {
+    "site": "www.iitd.ac.in",
+    "origin": "www.iitd.ac.in",
+    "domains": [
+      "www.iitd.ac.in",
+      "abudhabi.iitd.ac.in",
+      "academicoutreach.iitd.ac.in",
+      "academics.iitd.ac.in",
+      "alumni.iitd.ac.in",
+      "am.iitd.ac.in",
+      "automobileclub.iitd.ac.in",
+      "baja.iitd.ac.in",
+      "beb.iitd.ac.in",
+      "bhartischool.iitd.ac.in",
+      "bhm.iitd.ac.in",
+      "bioschool.iitd.ac.in",
+      "brca.iitd.ac.in",
+      "bsa.iitd.ac.in"
+    ],
+    "html_bytes": 273074
+  },
+  {
+    "site": "www.imperial.ac.uk",
+    "origin": "www.imperial.ac.uk",
+    "domains": [
+      "www.imperial.ac.uk",
+      "ahsc.org.uk",
+      "bsky.app",
+      "cdn-ukwest.onetrust.com",
+      "email.imperial.ac.uk",
+      "en.wikipedia.org",
+      "imperialcollegehealthpartners.com",
+      "instagram.com",
+      "profiles.imperial.ac.uk",
+      "pxl01-imperialacuk.terminalfour.net",
+      "shopimperial.org",
+      "t4-cms.imperial.ac.uk",
+      "twitter.com",
+      "www.facebook.com"
+    ],
+    "html_bytes": 57007
+  },
+  {
+    "site": "www.india.gov.in",
+    "origin": "www.india.gov.in",
+    "domains": [
+      "www.india.gov.in",
+      "admissions.nic.in",
+      "agmarknet.gov.in",
+      "amritkaal.nic.in",
+      "bharatinnovates.in",
+      "bhavishya.nic.in",
+      "cbc.gov.in",
+      "cbpssubscriber.mygov.in",
+      "cdn.jsdelivr.net",
+      "code.jquery.com",
+      "dbn.gov.in",
+      "ddnews.gov.in",
+      "embindpp.gov.in",
+      "eraktkosh.mohfw.gov.in"
+    ],
+    "html_bytes": 615111
+  },
+  {
+    "site": "www.irishtimes.com",
+    "origin": "www.irishtimes.com",
+    "domains": [
+      "www.irishtimes.com",
+      "apps.apple.com",
+      "assets.pippa.io",
+      "author-service-images-prod-us-east-1.publishing.aws.arc.pub",
+      "cdn.beyondwords.io",
+      "cdn.cookielaw.org",
+      "cdn.sophi.io",
+      "cloudfront-eu-central-1.images.arcpublishing.com",
+      "content.assets.pressassociation.io",
+      "d1eecnimuxt4s0.cloudfront.net",
+      "d2j5ip5u6h2g6o.cloudfront",
+      "d2j5ip5u6h2g6o.cloudfront.net",
+      "dekyzkzc0zgfn.cloudfront.net",
+      "digitaleditiondemo.irishtimes.com"
+    ],
+    "html_bytes": 1991769
+  },
+  {
+    "site": "www.itu.int",
+    "origin": "www.itu.int",
+    "domains": [
+      "www.itu.int",
+      "blog.drisgill.com",
+      "cse.google.com",
+      "pp.itu.int",
+      "s7.addthis.com",
+      "static.addtoany.com",
+      "static.hotjar.com",
+      "translate.itu.int",
+      "www.addtoany.com",
+      "www.googletagmanager.com",
+      "www.youtube.com"
+    ],
+    "html_bytes": 101009
+  },
+  {
+    "site": "www.jpl.nasa.gov",
+    "origin": "www.jpl.nasa.gov",
+    "domains": [
+      "www.jpl.nasa.gov",
+      "acquisition.jpl.nasa.gov",
+      "caltech.edu",
+      "climate.nasa.gov",
+      "d2pn8kiwq2w21t.cloudfront.net",
+      "dap.digitalgov.gov",
+      "exoplanets.nasa.gov",
+      "eyes.nasa.gov",
+      "f9ea773a600b.edge.sdk.awswaf.com",
+      "instagram.com",
+      "mars.nasa.gov",
+      "science.nasa.gov",
+      "scienceandtechnology.jpl.nasa.gov",
+      "script.crazyegg.com"
+    ],
+    "html_bytes": 297231
   },
   {
     "site": "www.kernel.org",
@@ -276,7 +1605,42 @@
       "servers.com",
       "www.akamai.com"
     ],
-    "html_bytes": 20359
+    "html_bytes": 19148
+  },
+  {
+    "site": "www.kth.se",
+    "origin": "www.kth.se",
+    "domains": [
+      "www.kth.se",
+      "analytics-stat.sys.kth.se",
+      "app.kth.se",
+      "canvas.kth.se",
+      "intra.kth.se",
+      "webmail.kth.se",
+      "www.stockholmtrio.org"
+    ],
+    "html_bytes": 62199
+  },
+  {
+    "site": "www.loc.gov",
+    "origin": "www.loc.gov",
+    "domains": [
+      "www.loc.gov",
+      "ask.loc.gov",
+      "assets.adobedtm.com",
+      "blogs.loc.gov",
+      "catalog.loc.gov",
+      "copyright.gov",
+      "dev.loc.gov",
+      "instagram.com",
+      "itunes.apple.com",
+      "lcm.loc.gov",
+      "library-of-congress-shop.myshopify.com",
+      "loc.gov",
+      "media.loc.gov",
+      "newsroom.loc.gov"
+    ],
+    "html_bytes": 77093
   },
   {
     "site": "www.mit.edu",
@@ -285,6 +1649,7 @@
       "www.mit.edu",
       "calendar.mit.edu",
       "hr.mit.edu",
+      "ki.mit.edu",
       "learn.mit.edu",
       "news.mit.edu",
       "socialmediahub.mit.edu",
@@ -294,10 +1659,9 @@
       "web.mit.edu",
       "whereis.mit.edu",
       "www.facebook.com",
-      "www.google.com",
-      "www.googletagmanager.com"
+      "www.google.com"
     ],
-    "html_bytes": 47860
+    "html_bytes": 47970
   },
   {
     "site": "www.mozilla.org",
@@ -318,7 +1682,7 @@
       "mozilla.vc",
       "newproducts.mozilla.org"
     ],
-    "html_bytes": 115681
+    "html_bytes": 114281
   },
   {
     "site": "www.nasa.gov",
@@ -339,7 +1703,7 @@
       "rankmath.com",
       "science.nasa.gov"
     ],
-    "html_bytes": 355858
+    "html_bytes": 358015
   },
   {
     "site": "www.nature.com",
@@ -355,44 +1719,288 @@
       "fed-libs.nature.com",
       "idp.nature.com",
       "journal-alerts.springernature.com",
+      "link.springer.com",
       "masterclasses.nature.com",
       "media.springernature.com",
-      "mts-nature.nature.com",
-      "partnerships.nature.com"
+      "mts-nature.nature.com"
     ],
-    "html_bytes": 232055
+    "html_bytes": 235553
   },
   {
-    "site": "www.theguardian.com",
-    "origin": "www.theguardian.com",
+    "site": "www.netbsd.org",
+    "origin": "www.netbsd.org",
     "domains": [
-      "www.theguardian.com",
-      "advertising.theguardian.com",
-      "api.nextgen.guardianapps.co.uk",
-      "app.adjust.com",
-      "assets.guim.co.uk",
-      "avatar.guim.co.uk",
-      "avatar.theguardian.com",
+      "www.netbsd.org",
+      "armbsd.org",
+      "blog.netbsd.org",
+      "cdn.netbsd.org",
+      "github.com",
+      "victory.netbsd.org",
+      "www.paypal.com"
+    ],
+    "html_bytes": 12640
+  },
+  {
+    "site": "www.netlify.com",
+    "origin": "www.netlify.com",
+    "domains": [
+      "www.netlify.com",
+      "answers.netlify.com",
+      "app.netlify.com",
       "bsky.app",
-      "callouts.guardianapis.com",
-      "contributions.guardianapis.com",
-      "developers.google.com",
-      "discussion.theguardian.com",
-      "embed.theguardian.com",
-      "github.com"
+      "cdn.cookielaw.org",
+      "cursor.com",
+      "developers.netlify.com",
+      "discord.com",
+      "discord.gg",
+      "docs.netlify.com",
+      "github.com",
+      "googleads.g.doubleclick.net",
+      "i.ytimg.com",
+      "js.hsforms.net"
     ],
-    "html_bytes": 1335280
+    "html_bytes": 415158
   },
   {
-    "site": "www.un.org",
-    "origin": "www.un.org",
+    "site": "www.nist.gov",
+    "origin": "www.nist.gov",
     "domains": [
-      "www.un.org",
-      "code.jquery.com",
-      "maxcdn.bootstrapcdn.com",
-      "ssl.google-analytics.com",
-      "www.googletagmanager.com"
+      "www.nist.gov",
+      "challenges.cloudflare.com",
+      "csrc.nist.gov",
+      "custom.transaction",
+      "customer-ltx6ylk10sje63q6.cloudflarestream.com",
+      "freedom250.org",
+      "giphy.com",
+      "github.com",
+      "js-agent.newrelic.com",
+      "nistdigitalarchives.contentdm.oclc.org",
+      "nvd.nist.gov",
+      "ogp.me",
+      "public.govdelivery.com",
+      "purl.org"
     ],
-    "html_bytes": 9679
+    "html_bytes": 97194
+  },
+  {
+    "site": "www.noaa.gov",
+    "origin": "www.noaa.gov",
+    "domains": [
+      "www.noaa.gov",
+      "cdn.jsdelivr.net",
+      "docs.google.com",
+      "fonts.googleapis.com",
+      "forecast.weather.gov",
+      "nsd.rdc.noaa.gov",
+      "ogp.me",
+      "search.usa.gov",
+      "sites.google.com",
+      "touchpoints.app.cloud.gov",
+      "twitter.com",
+      "vote.gov",
+      "www.commerce.gov",
+      "www.drupal.org"
+    ],
+    "html_bytes": 51594
+  },
+  {
+    "site": "www.npr.org",
+    "origin": "www.npr.org",
+    "domains": [
+      "www.npr.org",
+      "boards.greenhouse.io",
+      "cdn.cookielaw.org",
+      "cpftuhdzdstc5rz8x.ay.delivery",
+      "feeds.npr.org",
+      "gothamist.com",
+      "help.npr.org",
+      "js.stripe.com",
+      "media.npr.org",
+      "npr.brightspotcdn.com",
+      "ondemand.npr.org",
+      "plus.npr.org",
+      "prfx.byspotify.com",
+      "prod-eks-bundles.npr.org"
+    ],
+    "html_bytes": 953139
+  },
+  {
+    "site": "www.nvidia.com",
+    "origin": "www.nvidia.com",
+    "domains": [
+      "www.nvidia.com",
+      "academy.nvidia.com",
+      "accounts.nvgs.nvidia.com",
+      "api-prod.nvidia.com",
+      "blogs.nvidia.com",
+      "build.nvidia.com",
+      "catalog.ngc.nvidia.com",
+      "cdn.cookielaw.org",
+      "developer.nvidia.com",
+      "docs.deci.ai",
+      "docs.nvidia.com",
+      "images.nvidia.com",
+      "investor.nvidia.com",
+      "marketplace.nvidia.com"
+    ],
+    "html_bytes": 750485
+  },
+  {
+    "site": "www.openbsd.org",
+    "origin": "www.openbsd.org",
+    "domains": [
+      "www.openbsd.org",
+      "cvsweb.openbsd.org",
+      "github.com",
+      "man.openbsd.org",
+      "mandoc.bsd.lv",
+      "openbsd.gothub.org",
+      "openbsdstore.com",
+      "www.libressl.org",
+      "www.openbgpd.org",
+      "www.openbsdfoundation.org",
+      "www.openiked.org",
+      "www.openntpd.org",
+      "www.opensmtpd.org",
+      "www.openssh.com"
+    ],
+    "html_bytes": 3622
+  },
+  {
+    "site": "www.openssl.org",
+    "origin": "www.openssl.org",
+    "domains": [
+      "www.openssl.org",
+      "api.transpond.io",
+      "cryptlib.com",
+      "openssl-communities.org",
+      "openssl-conference.org",
+      "openssl-corporation.org",
+      "openssl-library.org",
+      "openssl-mission.org",
+      "openssl-projects.org",
+      "openssl.foundation",
+      "openssl.org",
+      "www.bouncycastle.org"
+    ],
+    "html_bytes": 7056
+  },
+  {
+    "site": "www.opensuse.org",
+    "origin": "www.opensuse.org",
+    "domains": [
+      "www.opensuse.org",
+      "aeondesktop.github.io",
+      "bsky.app",
+      "bugzilla.opensuse.org",
+      "build.opensuse.org",
+      "doc.opensuse.org",
+      "en.opensuse.org",
+      "endof10.org",
+      "events.opensuse.org",
+      "forums.opensuse.org",
+      "fosstodon.org",
+      "get.opensuse.org",
+      "github.com",
+      "kalpadesktop.org"
+    ],
+    "html_bytes": 63633
+  },
+  {
+    "site": "www.ovhcloud.com",
+    "origin": "www.ovhcloud.com",
+    "domains": [
+      "www.ovhcloud.com",
+      "api.ovh.com",
+      "blog.ovhcloud.com",
+      "ca.api.ovh.com",
+      "ca.ovh.com",
+      "community.ovhcloud.com",
+      "corporate.ocms.ovhcloud.tools",
+      "corporate.ovhcloud.com",
+      "docs.ovhcloud.com",
+      "en.wikipedia.org",
+      "github.com",
+      "help.ovhcloud.com",
+      "kimsufi.ocms.ovhcloud.tools",
+      "labs.ovhcloud.com"
+    ],
+    "html_bytes": 1047488
+  },
+  {
+    "site": "www.perl.org",
+    "origin": "www.perl.org",
+    "domains": [
+      "www.perl.org",
+      "blogs.perl.org",
+      "cdn.perl.org",
+      "creativecommons.org",
+      "dev.perl.org",
+      "fonts.googleapis.com",
+      "jobs.perl.org",
+      "learn.perl.org",
+      "metacpan.org",
+      "www.fastly.com",
+      "www.googletagmanager.com",
+      "www.perl.com",
+      "www.perlfoundation.org",
+      "www.raku.org"
+    ],
+    "html_bytes": 12397
+  },
+  {
+    "site": "www.php.net",
+    "origin": "www.php.net",
+    "domains": [
+      "www.php.net",
+      "analytics.php.net",
+      "downloads.php.net",
+      "feathericons.com",
+      "fosstodon.org",
+      "gist.github.com",
+      "github.com",
+      "pictogrammers.com",
+      "scherzer.dev",
+      "surveys.jetbrains.com",
+      "thephp.foundation",
+      "twitter.com",
+      "wiki.php.net",
+      "www.jetbrains.com"
+    ],
+    "html_bytes": 54030
+  },
+  {
+    "site": "www.postgresql.org",
+    "origin": "www.postgresql.org",
+    "domains": [
+      "www.postgresql.org",
+      "fosstodon.org",
+      "lists.postgresql.org",
+      "planet.postgresql.org",
+      "postgr.es",
+      "wiki.postgresql.org"
+    ],
+    "html_bytes": 24819
+  },
+  {
+    "site": "www.redcross.org",
+    "origin": "www.redcross.org",
+    "domains": [
+      "www.redcross.org",
+      "cdn.cookielaw.org",
+      "fonts.googleapis.com",
+      "rum.hlx.page",
+      "s.go-mpulse.net",
+      "s2.go-mpulse.net",
+      "volunteerconnection.redcross.org",
+      "www.facebook.com",
+      "www.instagram.com",
+      "www.linkedin.com",
+      "www.redcrossblood.org",
+      "www.redcrossstore.org",
+      "www.threads.net",
+      "www.tiktok.com"
+    ],
+    "html_bytes": 211477
   }
 ]

@@ -15,41 +15,13 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse
 
+from .candidates import CANDIDATES
 from .config import CONFIG, MAX_DOMAINS_PER_SITE
 
-SITES = [
-    "https://www.wikipedia.org/",
-    "https://www.bbc.com/",
-    "https://edition.cnn.com/",
-    "https://github.com/",
-    "https://weather.com/",
-    "https://www.nasa.gov/",
-    "https://www.mozilla.org/",
-    "https://www.who.int/",
-    "https://arxiv.org/",
-    "https://www.worldbank.org/",
-    "https://www.theguardian.com/",
-    "https://www.aljazeera.com/",
-    "https://www.nature.com/",
-    "https://www.ietf.org/",
-    "https://www.un.org/",
-    "https://www.nih.gov/",
-    "https://www.cdc.gov/",
-    "https://www.mit.edu/",
-    "https://www.harvard.edu/",
-    "https://archive.org/",
-    "https://www.gutenberg.org/",
-    "https://www.gnu.org/",
-    "https://www.debian.org/",
-    "https://www.kernel.org/",
-    "https://www.apache.org/",
-    "https://news.ycombinator.com/",
-    "https://www.ibm.com/",
-    "https://www.oracle.com/",
-]
+SITES = CANDIDATES
 
 MIN_DOMAINS = 5
-MAX_SITES = 20
+MAX_SITES = 100
 
 _HOST_RE = re.compile(r'https?://([a-zA-Z0-9][a-zA-Z0-9.\-]{2,60}\.[a-z]{2,12})')
 # Hostnames that appear in markup but are never resolved during a page load.
@@ -96,7 +68,7 @@ def discover(url: str) -> dict:
 
 def build(path=None) -> list[dict]:
     path = path or (CONFIG / "targets.json")
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    with ThreadPoolExecutor(max_workers=16) as ex:
         targets = list(ex.map(discover, SITES))
     ok = [t for t in targets if "error" not in t and len(t["domains"]) >= MIN_DOMAINS]
     failed = [t for t in targets if t not in ok]
