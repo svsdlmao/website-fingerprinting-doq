@@ -1,0 +1,12 @@
+preprocess: kept 423/464 traces  dropped={'too_few_events': 41}
+browser dataset: 410 traces, 75 sites, exchanges per trace min 6 / median 18 / max 498
+  No padding             RF  98.5%   CNN  63.2%   bw 0%
+  RFC 8467 block         RF  42.9%   CNN  34.1%   bw 251%
+  RFC 8467 + count       RF  22.0%   CNN  13.9%   bw 723%
+  Adaptive (proposed)    RF  11.2%   CNN   7.1%   bw 723%
+  Maximal (512/1024)     RF  42.7%   CNN  31.5%   bw 749%
+  adaptive, count grid  32: RF  11.2%   bw 723%
+  adaptive, count grid  64: RF  10.0%   bw 1430%
+  adaptive, count grid 128: RF   7.1%   bw 2875%
+  adaptive, count grid 256: RF   6.8%   bw 5814%
+  adaptive, count grid 512: RF   4.4%   bw 11695%

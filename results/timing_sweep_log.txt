@@ -1,0 +1,5 @@
+  delay grid    50 ms   RF   5.5%   CNN  13.9%   +  21.1 ms   bw 327%
+  delay grid   100 ms   RF   5.5%   CNN  15.1%   +  51.0 ms   bw 327%
+  delay grid   250 ms   RF   6.2%   CNN   9.3%   + 179.0 ms   bw 327%
+  delay grid   500 ms   RF   4.0%   CNN   6.5%   + 406.4 ms   bw 327%
+  delay grid  1000 ms   RF   2.7%   CNN   3.2%   + 887.9 ms   bw 327%

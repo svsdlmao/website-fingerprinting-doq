@@ -1,9 +1,9 @@
 # Website Fingerprinting over DNS-over-QUIC
 
-**Evaluating the Limits of Padding Defences** — Course Project, Review 1 (25% implementation)
+**Evaluating the Limits of Padding Defences** — BCSE308L Computer Networks course project
 
 Anant Agarwal (23BDS0145) · Aryaman Tripathi (24BAI0107) · Shauryaveer Singh Dabas (24BCE0416)
-Vellore Institute of Technology · Course Faculty: Dr. Yoganand S
+Vellore Institute of Technology · Guide: Dr. Yoganand S
 
 ---
 
@@ -14,149 +14,152 @@ DNS-over-QUIC (RFC 9250) encrypts DNS, but an on-path observer still sees the
 much of the visited website survives in those three channels, and how much
 padding actually closes them.
 
-Everything here runs on **live DoQ traffic** captured from a public RFC 9250
-resolver — no synthetic traces.
+Everything runs on **live DoQ traffic** to a public RFC 9250 resolver
+(dns.adguard-dns.com) — about 74,000 real queries in total, no synthetic traces.
 
-## Headline result
+## Datasets
 
-100-site closed world (Review 2):
+| Dataset | What it is | Size |
+|---|---|---|
+| Crawled, 100 sites | Hostnames each landing page's HTML refers to, resolved over DoQ | 1,500 page loads, 39,110 queries |
+| Browser-driven, 75 sites | Hostnames a real Chrome page load resolved (from its net-log), replayed over DoQ | 410 page loads, 22,672 queries |
+| Open-world background | 225 sites the attacker never trains on | 450 visits, 12,016 queries |
+| Crawled, 20 sites | Review-1 dataset, captured twice for repeatability | 400 page loads each |
 
-| Defence | Best attacker | Bandwidth | Added latency |
-|---|---|---|---|
-| No padding | **100.0 %** | 0 % | 0 ms |
-| RFC 8467 block padding | 15.1 % | 227 % | 0 ms |
-| RFC 8467 + count normalisation | 10.3 % | 327 % | 0 ms |
-| **Adaptive (proposed)** | **5.5 %** | 327 % | +21 ms |
-| Maximal padding (512/1024) | 14.9 % | 692 % | 0 ms |
+## Results
 
-Random guessing over 100 sites is 1 %. Dataset: 1,500 page-load traces,
-39,110 live DoQ queries, 118 features per trace, 5-fold stratified CV.
+Best attacker accuracy (5-fold stratified CV):
 
-The earlier 20-site run (Review 1) is kept alongside for comparison:
-`data/raw/doq_traces_20sites.jsonl`, `results/metrics/results_20sites.json`.
+| Defence | Crawled: feature models | Crawled: 1-D CNN | Browser: RF | Bandwidth (crawled) |
+|---|---|---|---|---|
+| No padding | **100.0 %** | 99.7 % | **98.5 %** | 0 % |
+| RFC 8467 block padding | 15.1 % | 33.7 % | 42.9 % | 227 % |
+| RFC 8467 + count normalisation | 10.3 % | 15.8 % | 22.0 % | 327 % |
+| **Adaptive (proposed)** | **5.5 %** | **13.9 %** | **11.2 %** | 327 % (+21 ms) |
+| Maximal padding (512/1024) | 14.9 % | 32.6 % | 42.7 % | 692 % |
 
-Findings:
+Random guessing: 1 % (100 sites), 1.3 % (75 sites).
 
-1. **Undefended DoQ leaks completely.** 100 % across 100 websites — a page
-   load's traffic profile is effectively a lookup key for the site.
-2. **More padding does not help.** Maximal padding costs 3× the bandwidth of
-   RFC 8467 and scores no better (14.9 % vs 15.1 %). This held at both 20 and
-   100 sites. The size channel is already closed at RFC 8467.
-3. **What still leaks is count and timing.** Under RFC 8467 at 100 sites,
-   timing alone gives 10.9 % and exchange count alone 8.0 % (`src/ablation.py`).
-   At 20 sites the order was reversed (count 25 %, timing 19 %) — as the
-   number of sites grows, timing becomes the dominant residual channel.
-4. **Closing both gets closest to the floor, but not all the way.** The
-   adaptive defence reaches 5.5 %, the lowest of any policy — still about
-   5× the 1 % random-guess floor, so residual leakage remains.
+**Open world** (100 monitored + 225 unseen background sites, Random Forest):
+undefended, the attacker names 96.6 % of monitored visits correctly with **no false
+alarms** on 450 background visits (threshold 0.5). Under the proposed defence its
+correct identifications (4.3 %) are no more frequent than its false alarms (5.1 %).
+
+### Findings
+
+1. **Undefended DoQ leaks almost completely** — on crawled traffic, real browser
+   traffic and in the open world.
+2. **More padding does not help.** Maximal padding costs about three times the
+   bandwidth of RFC 8467 and was no better in *every* setting: crawled, browser,
+   open world and against the CNN. After RFC 8467 every message in our data is
+   already the same length.
+3. **What still leaks is count and timing.** Under RFC 8467, count alone gives
+   8.0 % and timing alone 10.9 % (100 crawled sites); every surviving "length"
+   feature just re-encodes the count (`src/ablation.py`). On browser traffic, where
+   pages make 6 to 498 lookups, the count leak is much larger (42.9 % under RFC 8467).
+4. **The proposed defence is the best policy everywhere, but does not close the
+   leak, and each layer has a real cost:**
+   - hiding timing from the CNN needs delays rounded up to ~1 s
+     (CNN 13.9 % → 3.2 %, +888 ms per lookup; `src/timing_sweep.py`);
+   - hiding the count on browser pages needs bandwidth that explodes
+     (723 % at grid 32, 11,695 % at grid 512; `src/browser_eval.py`).
+5. **The packet-size model holds.** Real QUIC overhead measured on 769 live
+   datagrams is 30 B for queries and 32–39 B for responses (model: 33 B);
+   re-scoring with the measured values changed no conclusion (`src/wire_check.py`).
 
 ## Quick start
 
-Install dependencies:
-
 ```bash
-pip install dnspython aioquic scikit-learn numpy pandas matplotlib
+pip install -r requirements.txt
 ```
 
-Reproduce every metric and figure from the captured dataset:
+Reproduce the main results from the captured data (no network needed):
 
 ```bash
 python run_pipeline.py
 ```
 
-Capture fresh live traffic first (about 3.5 minutes, needs outbound UDP/853):
+Each later experiment has its own entry point:
 
 ```bash
-python run_pipeline.py --capture 20
+python -m src.cnn                    # 1-D CNN attacker
+python -m src.wire_check             # measure real QUIC overhead (needs UDP/853)
+python -m src.overhead_sensitivity   # re-score with measured overhead
+python -m src.timing_sweep           # delay grid vs CNN and RF
+python -m src.openworld evaluate     # open-world TPR / FPR
+python -m src.browser_eval           # results on browser-driven traces
 ```
 
-Re-crawl the target websites to rebuild their domain sets, then capture:
+Fresh captures (need outbound UDP/853; the browser step needs Chrome):
 
 ```bash
-python run_pipeline.py --discover --capture 20
+python run_pipeline.py --discover --capture 15   # crawled dataset
+python -m src.openworld collect                  # background sites
+python -m src.openworld capture
+python -m src.capture.browser 5                  # real Chrome page loads
+python -m src.capture.browser_replay             # replay them over DoQ
 ```
 
 ## Live demo
-
-Fingerprints a website from encrypted DoQ traffic captured *right now*, then
-replays the same trace through the proposed defence to show the attack fail:
 
 ```bash
 python demo_live.py
 ```
 
-It trains the attacker, opens a real QUIC connection, visits one site (hidden
-from the attacker unless you pass `--site`), prints what the adversary actually
-observes — direction, byte length, timestamp — and asks it to name the site.
+Trains the attacker, opens a real QUIC connection, visits a site hidden from the
+attacker, prints what an on-path observer sees (direction, byte length, time),
+names the site, then replays the same trace through the proposed defence.
 `python demo_live.py --list` shows the monitored sites.
 
 ## Modules
 
-| | Module | File | Role |
-|---|---|---|---|
-| M1 | Traffic Capture | `src/targets.py`, `src/capture/doq_client.py` | Crawl each landing page for the hostnames it references, then resolve them over live DoQ |
-| M2 | Preprocessing | `src/preprocess.py` | Completeness filtering, ordering, label re-indexing |
-| M3 | Defence Layer | `src/defenses.py` | Block padding, count normalisation, delay quantisation |
-| M4 | Feature Extraction | `src/features.py` | 118 features from direction, length and time only |
-| M5 | Attack Models | `src/models.py` | Random Forest, Gradient Boosting, MLP, kNN |
-| M6 | Evaluation | `src/evaluate.py` | 5-fold CV; accuracy, F1, bandwidth and latency cost |
-| M7 | Visualisation | `src/viz.py` | Six result figures |
-| — | Channel ablation | `src/ablation.py` | Which observable still identifies the site after padding |
-| — | Parameter sweep | `src/sweep.py` | Tunes the proposed defence's two shaping parameters |
+| | Module | File |
+|---|---|---|
+| M1 | Traffic capture | `src/targets.py`, `src/capture/doq_client.py` |
+| M2 | Preprocessing | `src/preprocess.py` |
+| M3 | Defence layer | `src/defenses.py` |
+| M4 | Feature extraction (118 features) | `src/features.py` |
+| M5 | Attack models: RF, GB, MLP, kNN, 1-D CNN | `src/models.py`, `src/cnn.py` |
+| M6 | Evaluation, ablation, sweeps | `src/evaluate.py`, `src/ablation.py`, `src/sweep.py`, `src/timing_sweep.py` |
+| M7 | Visualisation | `src/viz.py` |
+| — | Wire validation | `src/wire_check.py`, `src/overhead_sensitivity.py` |
+| — | Open world | `src/openworld.py`, `src/candidates_unmonitored.py` |
+| — | Browser-driven capture | `src/capture/browser.py`, `src/capture/browser_replay.py`, `src/browser_eval.py` |
 
 ## Attacker model
 
-The adversary is passive and on-path. Because DoQ is encrypted it can observe
-only three things per datagram: **direction**, **byte length**, **arrival time**.
-Every feature in `src/features.py` is derived from those alone — hostnames,
-record contents and response codes are stored during capture for analysis but
-are never given to a classifier.
+Passive and on-path. Per datagram it sees only **direction**, **byte length** and
+**arrival time**. Hostnames and record contents are stored for analysis but never
+given to a classifier.
 
-## What is measured vs. modelled
+## Why browser lookups are replayed
 
-Measured from the live resolver: every DNS query and response wire length, every
-round-trip time, every inter-arrival gap, and the set of hostnames each page
-references.
-
-Modelled: a single constant. A DoQ message travels inside a QUIC STREAM frame in
-a 1-RTT short-header packet, which adds a fixed 31 bytes of framing plus a 2-byte
-length prefix (`src/config.py`). Validating that constant against a `tshark`
-capture is the first item of the next phase.
-
-## Layout
-
-```
-config/targets.json          target sites and their measured domain sets
-data/raw/doq_traces.jsonl    400 captured page-load traces
-data/processed/              cleaned traces and dataset summary
-results/metrics/             results.json, results.csv, ablation.json, sweep.json
-results/figures/             six figures
-src/                         M1-M7 plus ablation and sweep
-run_pipeline.py              end-to-end runner
-demo_live.py                 live fingerprinting demo
-build_deck.js                regenerates the Review-1 deck from the current figures
-```
+No browser supports DNS-over-QUIC, so a browser cannot be pointed at a DoQ
+resolver. Headless Chrome loads each page with a fresh profile and writes a
+net-log; we take every hostname the page made it resolve and when, drop Chrome's
+own traffic, and resolve that sequence over live DoQ. Queries leave at the
+browser's own times; responses arrive one measured round trip later.
 
 ## Limitations
 
-- Closed world of 100 sites. The resolver cache makes undefended traces
-  near-deterministic, so 100 % is an upper bound, not a field estimate.
-- Traces come from a stub resolver replaying measured domain sets, not from a
-  real browser page load.
-- The 31-byte QUIC framing term is analytic and not yet wire-validated.
+- The open world is small (225 background sites); real background traffic is far larger.
+- Defences are applied to captured traces, not run in a live DoQ client.
+- Browser traces use real browser lookups, but the queries are sent by our client.
+- Small training sets per site, especially for browser traces (5–8 visits), which
+  limits the CNN in particular.
 - One resolver, one network vantage point.
 
-The finding that matters — *which channel leaks* — does not depend on the
-absolute ceiling.
+## Report
+
+The full project report is generated by `report/build_report.js`
+(`report/find_pages.py` lays it out in Word and fills in page numbers).
 
 ## References
 
-1. C. Huitema, S. Dickinson, A. Mankin. *DNS over Dedicated QUIC Connections.*
-   RFC 9250, IETF, May 2022.
-2. A. Mayrhofer. *Padding Policies for Extension Mechanisms for DNS (EDNS(0)).*
-   RFC 8467, IETF, October 2018.
-3. S. Siby, M. Juarez, C. Diaz, N. Vallina-Rodriguez, C. Troncoso.
-   *Encrypted DNS → Privacy? A Traffic Analysis Perspective.* NDSS 2020.
-4. M. Kosek, T. V. Doan, S. Granderath, V. Bajpai.
-   *One to Rule Them All? A First Look at DNS over QUIC.* PAM 2022.
-5. A. Panchenko et al. *Website Fingerprinting at Internet Scale.* NDSS 2016.
+1. C. Huitema, S. Dickinson, A. Mankin. *DNS over Dedicated QUIC Connections.* RFC 9250, 2022.
+2. A. Mayrhofer. *Padding Policies for Extension Mechanisms for DNS (EDNS(0)).* RFC 8467, 2018.
+3. S. Siby et al. *Encrypted DNS → Privacy? A Traffic Analysis Perspective.* NDSS 2020.
+4. J. Bushart, C. Rossow. *Padding Ain't Enough: Assessing the Privacy Guarantees of Encrypted DNS.* FOCI 2020.
+5. M. Kosek et al. *One to Rule Them All? A First Look at DNS over QUIC.* PAM 2022.
+6. A. Panchenko et al. *Website Fingerprinting at Internet Scale.* NDSS 2016.
+7. P. Sirinam et al. *Deep Fingerprinting.* ACM CCS 2018.

@@ -16,3 +16,13 @@ _slides/
 
 # Presentation is kept out of the repo - a separate deck will be made for GitHub
 presentation/
+
+# Generated report documents (built from report/build_report.js) and scratch
+report/*.docx
+report/*.pdf
+report/node_modules/
+report/package.json
+report/package-lock.json
+report/chk.png
+report/p1.json
+report/pages_img/

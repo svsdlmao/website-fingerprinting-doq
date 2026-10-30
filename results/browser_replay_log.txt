@@ -1,0 +1,26 @@
+464 browser visits over 98 sites; dropped 1 browser-wide hostnames: ['www.google.com']
+  [w3] 0/77
+  [w4] 0/77
+  [w2] 0/77
+  [w1] 0/78
+  [w0] 0/78
+  [w5] 0/77
+  [w0] 20/78
+  [w4] 20/77
+  [w1] 20/78
+  [w2] 20/77
+  [w5] 20/77
+  [w0] 40/78
+  [w3] 20/77
+  [w5] 40/77
+  [w2] 40/77
+  [w1] 40/78
+  [w0] 60/78
+  [w5] 60/77
+  [w4] 40/77
+  [w2] 60/77
+  [w3] 40/77
+  [w1] 60/78
+  [w4] 60/77
+  [w3] 60/77
+replayed 464 browser traces, 22672 live DoQ queries in 2586s -> C:\Users\dabas\CN PROJECT\data\raw\doq_traces_browser.jsonl

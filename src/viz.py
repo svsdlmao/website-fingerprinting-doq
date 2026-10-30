@@ -64,8 +64,8 @@ def fig_tradeoff(res):
     OFF = {
         "none":          (12, 6, "left"),
         "rfc8467":       (-12, 4, "right"),
-        "rfc8467_count": (14, 10, "left"),
-        "adaptive":      (14, -16, "left"),
+        "rfc8467_count": (14, 16, "left"),
+        "adaptive":      (18, -4, "left"),
         "maximal":       (-12, 6, "right"),
     }
     fig, ax = plt.subplots(figsize=(7.6, 4.8))
@@ -89,7 +89,8 @@ def fig_tradeoff(res):
 
     ax.axhline(res["random_guess_pct"], color="#4C5C68", ls="--", lw=1.2)
     ax.set_xlim(-60, 760)
-    ax.text(750, res["random_guess_pct"] + 2.5, "random guess (5%)",
+    ax.text(750, res["random_guess_pct"] + 2.5,
+            f"random guess ({res['random_guess_pct']:.0f}%)",
             fontsize=8, color="#4C5C68", ha="right")
     ax.set_xlabel("Bandwidth overhead (%)")
     ax.set_ylabel("Best attacker accuracy (%)")
@@ -118,9 +119,18 @@ def fig_confusion(res, sites):
                      f"{cell['accuracy']*100:.1f}% accuracy", fontsize=10)
         ax.set_xlabel("predicted site")
         ax.set_ylabel("true site")
-        ax.set_xticks(range(len(sites)))
-        ax.set_yticks(range(len(sites)), [s[:20] for s in sites], fontsize=6)
-        ax.set_xticklabels([str(i) for i in range(len(sites))], fontsize=6)
+        if len(sites) <= 30:
+            ax.set_xticks(range(len(sites)))
+            ax.set_yticks(range(len(sites)), [s[:20] for s in sites], fontsize=6)
+            ax.set_xticklabels([str(i) for i in range(len(sites))], fontsize=6)
+        else:
+            # 100 names cannot be read at this size; index the sites instead
+            step = 10 if len(sites) <= 150 else 25
+            ticks = list(range(0, len(sites), step))
+            ax.set_xticks(ticks, [str(t) for t in ticks], fontsize=7)
+            ax.set_yticks(ticks, [str(t) for t in ticks], fontsize=7)
+            ax.set_xlabel("predicted site (index)")
+            ax.set_ylabel("true site (index)")
         ax.grid(False)
     fig.colorbar(im, ax=axes, fraction=0.03, pad=0.02, label="fraction of true class")
     fig.savefig(FIGURES / "fig3_confusion.png", bbox_inches="tight")
@@ -199,15 +209,20 @@ def fig_sweep():
             for r in sel:
                 ax.annotate(f"count grid {r['count_grid']}",
                             (r["overhead_pct"], r["accuracy"] * 100),
-                            textcoords="offset points", xytext=(6, -14),
-                            ha="left", fontsize=8, color="#4C5C68")
-    ax.axhline(5.0, color="#4C5C68", ls="--", lw=1.2)
-    ax.text(ax.get_xlim()[1], 5.6, "random guess (5%)", fontsize=8,
-            color="#4C5C68", ha="right")
+                            textcoords="offset points", xytext=(0, 10),
+                            ha="center", fontsize=8, color="#4C5C68")
+    floor = 5.0
+    if (METRICS / "results.json").exists():
+        floor = json.loads((METRICS / "results.json").read_text(encoding="utf-8"))["random_guess_pct"]
+    ax.axhline(floor, color="#4C5C68", ls="--", lw=1.2)
+    xlo, xhi = ax.get_xlim()
+    ax.text(xlo + 0.01 * (xhi - xlo), floor + 0.25, f"random guess ({floor:.0f}%)", fontsize=8,
+            color="#4C5C68", ha="left", va="bottom")
     ax.set_xlabel("Bandwidth overhead (%)")
     ax.set_ylabel("Attacker accuracy (%)")
-    ax.set_ylim(0, 18)
-    ax.set_title("Tuning the proposed defence: a count grid of 32 is the sweet spot")
+    top = max(r["accuracy"] * 100 for r in rows)
+    ax.set_ylim(0, max(top * 1.6, floor + 4))
+    ax.set_title("Tuning the proposed defence: count grid against bandwidth cost")
     ax.legend(frameon=False, fontsize=8.5)
     fig.tight_layout()
     fig.savefig(FIGURES / "fig6_sweep.png")
@@ -228,3 +243,30 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+
+def fig_timing():
+    """Accuracy of the CNN and Random Forest against the latency the timing layer adds."""
+    path = METRICS / "timing_sweep.json"
+    if not path.exists():
+        return
+    rows = json.loads(path.read_text(encoding="utf-8"))
+    floor = json.loads((METRICS / "results.json").read_text(encoding="utf-8"))["random_guess_pct"]
+    lat = [r["added_latency_ms"] for r in rows]
+    fig, ax = plt.subplots(figsize=(7.6, 4.5))
+    ax.plot(lat, [r["cnn"] * 100 for r in rows], "-o", color=PALETTE[1], lw=1.8, ms=7, label="1-D CNN")
+    ax.plot(lat, [r["rf"] * 100 for r in rows], "-s", color=PALETTE[0], lw=1.8, ms=6, label="Random Forest")
+    for r in rows:
+        ax.annotate(f"{r['delay_grid_ms']} ms grid", (r["added_latency_ms"], r["cnn"] * 100),
+                    textcoords="offset points", xytext=(0, 9), ha="center", fontsize=8, color="#4C5C68")
+    ax.axhline(floor, color="#4C5C68", ls="--", lw=1.2)
+    ax.text(lat[-1], floor + 0.4, f"random guess ({floor:.0f}%)", fontsize=8, color="#4C5C68", ha="right")
+    ax.set_xscale("log")
+    ax.set_xlabel("Average delay added per lookup (ms, log scale)")
+    ax.set_ylabel("Attacker accuracy (%)")
+    ax.set_ylim(0, max(r["cnn"] for r in rows) * 100 * 1.3)
+    ax.set_title("Coarser timing hides more, at a latency cost")
+    ax.legend(frameon=False, fontsize=8.5)
+    fig.tight_layout()
+    fig.savefig(FIGURES / "fig7_timing.png")
+    plt.close(fig)
